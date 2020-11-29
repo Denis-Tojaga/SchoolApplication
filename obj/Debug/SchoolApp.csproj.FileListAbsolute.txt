@@ -34,3 +34,4 @@ C:\Users\Denis\Documents\GitHub\SchoolApplication\bin\Debug\EntityFramework.xml
 C:\Users\Denis\Documents\GitHub\SchoolApplication\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Denis\Documents\GitHub\SchoolApplication\bin\Debug\System.Data.SQLite.xml
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.csproj.CopyComplete
+C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.frmLogin.resources
