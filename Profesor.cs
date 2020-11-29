@@ -20,7 +20,7 @@ namespace SchoolApp
         public byte[] Slika { get; set; }
         public string DatumRodjenja { get; set; }
         public string DatumZaposlenja { get; set; }
-        public string JMBG { get; set; }
+        public int JMBG { get; set; }
         public string Ucionica { get; set; }        
 
     }
