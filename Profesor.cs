@@ -18,7 +18,7 @@ namespace SchoolApp
         public string Email { get; set; }
         public string BrojTelefona { get; set; }
         public byte[] Slika { get; set; }
-        public string JMBG { get; set; }
+        //public string JMBG { get; set; }
         public string Ucionica { get; set; }
 
         public override string ToString()
