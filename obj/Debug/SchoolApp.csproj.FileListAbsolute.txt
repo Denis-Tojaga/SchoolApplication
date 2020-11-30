@@ -36,3 +36,4 @@ C:\Users\Denis\Documents\GitHub\SchoolApplication\bin\Debug\System.Data.SQLite.x
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.csproj.CopyComplete
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.frmLogin.resources
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.frmAppMenu.resources
+C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.frmRegistracija.resources

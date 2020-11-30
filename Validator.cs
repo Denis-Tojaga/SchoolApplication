@@ -14,10 +14,12 @@ namespace SchoolApp
             bool validno = true;
             if(control is TextBox && string.IsNullOrEmpty((control as TextBox).Text))
                 validno = false;
-            else if(control is PictureBox && (control as PictureBox).Image==null)
+            else if(control is PictureBox && (control as PictureBox).Image!=null)
+                validno = false;
+            else if (control is DateTimePicker && (control as DateTimePicker).Value == null)
                 validno = false;
 
-            if(!validno)
+            if (!validno)
             {
                 err.SetError(control, message);
                 return false;

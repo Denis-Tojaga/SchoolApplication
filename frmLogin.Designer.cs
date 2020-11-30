@@ -72,6 +72,7 @@
             this.txtUsername.Size = new System.Drawing.Size(191, 21);
             this.txtUsername.TabIndex = 0;
             this.txtUsername.Text = "Username";
+            this.txtUsername.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtUsername_MouseClick);
             // 
             // label2
             // 
@@ -103,6 +104,9 @@
             this.txtPassword.Size = new System.Drawing.Size(191, 21);
             this.txtPassword.TabIndex = 1;
             this.txtPassword.Text = "Password";
+            this.txtPassword.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtPassword_MouseClick);
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
+            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // btnLogin
             // 
@@ -128,6 +132,7 @@
             this.btnRegister.TabIndex = 3;
             this.btnRegister.Text = "Register now";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // label4
             // 

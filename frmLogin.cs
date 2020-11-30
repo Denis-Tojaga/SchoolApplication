@@ -17,34 +17,31 @@ namespace SchoolApp
         {
             InitializeComponent();
         }
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+           
+        }
 
+        /// <summary>
+        /// Closing the current form
+        /// </summary>
         private void lblCloseLoginForm_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
 
-        }
-
+        /// <summary>
+        /// Searching for that user in data base and logging in
+        /// </summary>
         private void btnLogin_Click(object sender, EventArgs e)
         {
             try
             {
                 if(ValidirajPolja())
                 {
-                    string username = txtUsername.Text;
-                    string password = txtPassword.Text;
-                    Profesor profesor = PretragaProfesora(username,password);
-                    if (profesor != null)
-                    {
-                        MessageBox.Show($"Pronadjen u bazi {profesor.DatumRodjenja}");
-                        frmAppMenu meniForma = new frmAppMenu(profesor);
-                        meniForma.ShowDialog();
-                    }
-                    else
-                        MessageBox.Show($"Uneseni podaci nisu validni, registrirajte se!");
+                    Profesor profesor = PretragaProfesora(txtUsername.Text, txtPassword.Text);
+                      PokretanjeGlavneForme(profesor);
                 }
             }
             catch (Exception ex)
@@ -53,6 +50,9 @@ namespace SchoolApp
             }
         }
 
+        /// <summary>
+        /// Finds the right profesor with that data
+        /// </summary>
         private Profesor PretragaProfesora( string username, string password)
         {
             foreach (var profesor in konekcijaNaBazu.Profesori)
@@ -61,9 +61,62 @@ namespace SchoolApp
             return null;
         }
 
+
+        /// <summary>
+        /// Validates the field and puts errorProvider if they are now valid
+        /// </summary>
         private bool ValidirajPolja()
         {
             return Validator.ValidirajPolje(txtUsername, err, "This field is required!") && Validator.ValidirajPolje(txtPassword, err, "This field is required!");
+        }
+
+
+        /// <summary>
+        /// Placeholder logic at both textboxes and enter acception
+        /// </summary>
+        private void txtUsername_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtUsername.Text = "";
+        }
+        private void txtPassword_MouseClick(object sender, MouseEventArgs e)
+        {
+             txtPassword.Text = "";
+        }
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode==Keys.Enter)
+            {
+                PokretanjeGlavneForme(PretragaProfesora(txtUsername.Text, txtPassword.Text));
+                //ne proizvodi beep sound nakon sto se otvori forma nova
+                e.SuppressKeyPress = true;
+            }
+        }
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            char passcode = new char();
+            if (txtPassword.PasswordChar == passcode)
+                txtPassword.PasswordChar = '*';
+        }
+
+
+        /// <summary>
+        /// Opens up a new form for that specific profesor
+        /// </summary>
+        private void PokretanjeGlavneForme(Profesor profesor)
+        {
+            if(profesor!=null)
+            {
+                frmAppMenu forma = new frmAppMenu(profesor);
+                forma.ShowDialog();
+            }
+            else
+                MessageBox.Show($"Uneseni podaci nisu validni!");
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            frmRegistracija registracija = new frmRegistracija();
+            registracija.ShowDialog();
         }
     }
 }
