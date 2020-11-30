@@ -18,8 +18,6 @@ namespace SchoolApp
         public string Email { get; set; }
         public string BrojTelefona { get; set; }
         public byte[] Slika { get; set; }
-        public string DatumRodjenja { get; set; }
-        public string DatumRegistracije { get; set; }
         public string JMBG { get; set; }
         public string Ucionica { get; set; }
 

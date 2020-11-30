@@ -89,6 +89,8 @@ namespace SchoolApp
                     novi.Ucionica = txtUcionica.Text;
                    // novi.DatumRodjenja = dtmDatumRodjenja.Value.ToShortDateString();
                    // novi.DatumRegistracije = txtDatumRegistracije.Text;
+
+
                     konekcijaNaBazu.Profesori.Add(novi);
                     konekcijaNaBazu.SaveChanges();
                     DialogResult = DialogResult.OK;
