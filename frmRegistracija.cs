@@ -84,11 +84,11 @@ namespace SchoolApp
                     novi.Lozinka = txtLozinka.Text;
                     novi.Email = txtEmail.Text;
                     novi.Slika = ImageConventer.FromImageToByte(pbSlikaProfesora.Image);
-                    //novi.JMBG = txtJMBG.Text;
+                    novi.JMBG = txtJMBG.Text;
                     novi.BrojTelefona = txtBrojTelefona.Text;
                     novi.Ucionica = txtUcionica.Text;
-                   // novi.DatumRodjenja = dtmDatumRodjenja.Value.ToShortDateString();
-                   // novi.DatumRegistracije = txtDatumRegistracije.Text;
+                    novi.DatumRodjenja = dtmDatumRodjenja.Value.ToShortDateString();
+                    novi.DatumZaposlenja = txtDatumRegistracije.Text;
 
 
                     konekcijaNaBazu.Profesori.Add(novi);

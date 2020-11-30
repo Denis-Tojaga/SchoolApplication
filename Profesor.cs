@@ -17,8 +17,10 @@ namespace SchoolApp
         public string Lozinka { get; set; }
         public string Email { get; set; }
         public string BrojTelefona { get; set; }
+        public string DatumRodjenja { get; set; }
+        public string DatumZaposlenja { get; set; }
         public byte[] Slika { get; set; }
-        //public string JMBG { get; set; }
+        public string JMBG { get; set; }
         public string Ucionica { get; set; }
 
         public override string ToString()
