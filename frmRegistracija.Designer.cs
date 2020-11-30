@@ -95,9 +95,9 @@
             // 
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.label1.Location = new System.Drawing.Point(72, 38);
+            this.label1.Location = new System.Drawing.Point(98, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(638, 35);
+            this.label1.Size = new System.Drawing.Size(592, 35);
             this.label1.TabIndex = 3;
             this.label1.Text = "Register to SchoolApp";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -115,9 +115,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SchoolApp.Properties.Resources.fitLogo2;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(27, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 41);
+            this.pictureBox1.Size = new System.Drawing.Size(80, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -524,6 +524,7 @@
             this.label22.Size = new System.Drawing.Size(36, 38);
             this.label22.TabIndex = 5;
             this.label22.Text = "X";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // frmRegistracija
