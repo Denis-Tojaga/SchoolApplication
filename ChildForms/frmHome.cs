@@ -16,5 +16,10 @@ namespace SchoolApp.ChildForms
         {
             InitializeComponent();
         }
+
+        private void panelUserInfo_Paint(object sender, PaintEventArgs e)
+        {
+          ControlPaint.DrawBorder(e.Graphics,panelUserInfo.ClientRectangle, Color.FromArgb(30, 115, 172),ButtonBorderStyle.Solid);
+        }
     }
 }

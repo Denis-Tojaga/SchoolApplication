@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -29,16 +30,16 @@ namespace SchoolApp
 
         private void frmAppMenu_Load(object sender, EventArgs e)
         {
-            lblUser.Text = _profesor.KorisnickoIme;
+           lblCurrentUser.Text += _profesor.KorisnickoIme;
         }
 
 
         ///Method which opens up a child forms on button click
         private void OpenChildForm(Form childForma, object btnKliknuti)
         {
-            if(aktivnaForma!=null)
-                aktivnaForma.Close();
+            aktivnaForma?.Close();
             AktivirajButton(btnKliknuti);
+            (btnKliknuti as Button).BackColor = Color.FromArgb(30, 115, 172);
             aktivnaForma = childForma;
             childForma.TopLevel = false;
             childForma.FormBorderStyle = FormBorderStyle.None;
@@ -48,6 +49,7 @@ namespace SchoolApp
             childForma.BringToFront();
             childForma.Show();
             lblTitle.Text = childForma.Text;
+            lblTitle.BackColor = Color.FromArgb(30, 115, 172);
         }
 
 
@@ -64,13 +66,11 @@ namespace SchoolApp
         private void AktivirajButton(object btnKliknuti)
         {
             if (btnKliknuti != null)
-            {
                 if (kliknutiTrenutno != (Button)btnKliknuti)
                 {
                     DisableButton();
                     kliknutiTrenutno = (Button)btnKliknuti;
                 }
-            }
         }
 
 
@@ -84,6 +84,12 @@ namespace SchoolApp
         private void btnNotifications_Click(object sender, EventArgs e)
         {
             OpenChildForm(new frmNotifications(), sender);
+        }
+
+        private void lblLinkStranice_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://fit.ba/");
+            Process.Start(sInfo);
         }
     }
 }
