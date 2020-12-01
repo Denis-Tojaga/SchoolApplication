@@ -78,12 +78,15 @@ namespace SchoolApp
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmHome(), sender);
+            frmHome homeForm = new frmHome(_profesor);
+            OpenChildForm(homeForm, sender);
         }
 
         private void btnNotifications_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmNotifications(), sender);
+            frmNotifications notificationForm = new frmNotifications(_profesor);
+            OpenChildForm(notificationForm, sender);
+            
         }
 
         private void lblLinkStranice_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

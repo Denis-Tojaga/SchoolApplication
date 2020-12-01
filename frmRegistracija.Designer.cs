@@ -35,6 +35,9 @@
             this.pbSlikaProfesora = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rbFemale = new System.Windows.Forms.RadioButton();
+            this.rbMale = new System.Windows.Forms.RadioButton();
+            this.label23 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.dtmDatumRodjenja = new System.Windows.Forms.DateTimePicker();
             this.btnRegistracijaKorisnika = new System.Windows.Forms.Button();
@@ -70,6 +73,9 @@
             this.err = new System.Windows.Forms.ErrorProvider(this.components);
             this.ofdOdabirSlike = new System.Windows.Forms.OpenFileDialog();
             this.label22 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.txtPozicija = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlikaProfesora)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -125,6 +131,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.panel1.Controls.Add(this.label24);
+            this.panel1.Controls.Add(this.label25);
+            this.panel1.Controls.Add(this.txtPozicija);
+            this.panel1.Controls.Add(this.rbFemale);
+            this.panel1.Controls.Add(this.rbMale);
+            this.panel1.Controls.Add(this.label23);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.dtmDatumRodjenja);
             this.panel1.Controls.Add(this.btnRegistracijaKorisnika);
@@ -159,8 +171,45 @@
             this.panel1.Controls.Add(this.txtIme);
             this.panel1.Location = new System.Drawing.Point(216, 115);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(555, 403);
+            this.panel1.Size = new System.Drawing.Size(556, 514);
             this.panel1.TabIndex = 4;
+            // 
+            // rbFemale
+            // 
+            this.rbFemale.AutoSize = true;
+            this.rbFemale.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.rbFemale.ForeColor = System.Drawing.Color.White;
+            this.rbFemale.Location = new System.Drawing.Point(420, 351);
+            this.rbFemale.Name = "rbFemale";
+            this.rbFemale.Size = new System.Drawing.Size(74, 20);
+            this.rbFemale.TabIndex = 9;
+            this.rbFemale.TabStop = true;
+            this.rbFemale.Text = "Female";
+            this.rbFemale.UseVisualStyleBackColor = true;
+            // 
+            // rbMale
+            // 
+            this.rbMale.AutoSize = true;
+            this.rbMale.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.rbMale.ForeColor = System.Drawing.Color.White;
+            this.rbMale.Location = new System.Drawing.Point(332, 351);
+            this.rbMale.Name = "rbMale";
+            this.rbMale.Size = new System.Drawing.Size(58, 20);
+            this.rbMale.TabIndex = 8;
+            this.rbMale.TabStop = true;
+            this.rbMale.Text = "Male";
+            this.rbMale.UseVisualStyleBackColor = true;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.label23.Location = new System.Drawing.Point(381, 330);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(43, 18);
+            this.label23.TabIndex = 38;
+            this.label23.Text = "Spol";
             // 
             // pictureBox3
             // 
@@ -184,7 +233,7 @@
             this.dtmDatumRodjenja.Location = new System.Drawing.Point(21, 278);
             this.dtmDatumRodjenja.Name = "dtmDatumRodjenja";
             this.dtmDatumRodjenja.Size = new System.Drawing.Size(171, 23);
-            this.dtmDatumRodjenja.TabIndex = 4;
+            this.dtmDatumRodjenja.TabIndex = 3;
             // 
             // btnRegistracijaKorisnika
             // 
@@ -192,10 +241,10 @@
             this.btnRegistracijaKorisnika.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistracijaKorisnika.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistracijaKorisnika.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnRegistracijaKorisnika.Location = new System.Drawing.Point(179, 345);
+            this.btnRegistracijaKorisnika.Location = new System.Drawing.Point(154, 435);
             this.btnRegistracijaKorisnika.Name = "btnRegistracijaKorisnika";
-            this.btnRegistracijaKorisnika.Size = new System.Drawing.Size(167, 31);
-            this.btnRegistracijaKorisnika.TabIndex = 9;
+            this.btnRegistracijaKorisnika.Size = new System.Drawing.Size(221, 39);
+            this.btnRegistracijaKorisnika.TabIndex = 11;
             this.btnRegistracijaKorisnika.Text = "Register";
             this.btnRegistracijaKorisnika.UseVisualStyleBackColor = false;
             this.btnRegistracijaKorisnika.Click += new System.EventHandler(this.btnRegistracijaKorisnika_Click);
@@ -229,7 +278,7 @@
             this.txtUcionica.Location = new System.Drawing.Point(323, 220);
             this.txtUcionica.Name = "txtUcionica";
             this.txtUcionica.Size = new System.Drawing.Size(171, 19);
-            this.txtUcionica.TabIndex = 8;
+            this.txtUcionica.TabIndex = 7;
             // 
             // label20
             // 
@@ -260,7 +309,7 @@
             this.txtJMBG.Location = new System.Drawing.Point(323, 168);
             this.txtJMBG.Name = "txtJMBG";
             this.txtJMBG.Size = new System.Drawing.Size(171, 19);
-            this.txtJMBG.TabIndex = 7;
+            this.txtJMBG.TabIndex = 6;
             // 
             // label14
             // 
@@ -343,7 +392,7 @@
             this.txtBrojTelefona.Location = new System.Drawing.Point(21, 220);
             this.txtBrojTelefona.Name = "txtBrojTelefona";
             this.txtBrojTelefona.Size = new System.Drawing.Size(171, 19);
-            this.txtBrojTelefona.TabIndex = 3;
+            this.txtBrojTelefona.TabIndex = 2;
             // 
             // label12
             // 
@@ -408,7 +457,7 @@
             this.txtLozinka.Name = "txtLozinka";
             this.txtLozinka.PasswordChar = '*';
             this.txtLozinka.Size = new System.Drawing.Size(171, 19);
-            this.txtLozinka.TabIndex = 6;
+            this.txtLozinka.TabIndex = 5;
             // 
             // label8
             // 
@@ -439,7 +488,7 @@
             this.txtKorisnickoIme.Location = new System.Drawing.Point(324, 58);
             this.txtKorisnickoIme.Name = "txtKorisnickoIme";
             this.txtKorisnickoIme.Size = new System.Drawing.Size(171, 19);
-            this.txtKorisnickoIme.TabIndex = 5;
+            this.txtKorisnickoIme.TabIndex = 4;
             // 
             // label4
             // 
@@ -527,12 +576,43 @@
             this.label22.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
+            // label24
+            // 
+            this.label24.BackColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(26, 367);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(170, 1);
+            this.label24.TabIndex = 41;
+            this.label24.Text = "label24";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.label25.Location = new System.Drawing.Point(21, 323);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(124, 18);
+            this.label25.TabIndex = 40;
+            this.label25.Text = "Radna pozicija";
+            // 
+            // txtPozicija
+            // 
+            this.txtPozicija.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.txtPozicija.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPozicija.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPozicija.ForeColor = System.Drawing.Color.White;
+            this.txtPozicija.Location = new System.Drawing.Point(25, 344);
+            this.txtPozicija.Name = "txtPozicija";
+            this.txtPozicija.Size = new System.Drawing.Size(171, 19);
+            this.txtPozicija.TabIndex = 39;
+            // 
             // frmRegistracija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(769, 516);
+            this.ClientSize = new System.Drawing.Size(771, 629);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
@@ -597,5 +677,11 @@
         private System.Windows.Forms.ErrorProvider err;
         private System.Windows.Forms.OpenFileDialog ofdOdabirSlike;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.RadioButton rbFemale;
+        private System.Windows.Forms.RadioButton rbMale;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox txtPozicija;
     }
 }

@@ -22,6 +22,9 @@ namespace SchoolApp
         public byte[] Slika { get; set; }
         public string JMBG { get; set; }
         public string Ucionica { get; set; }
+        public string RadnaPozicija { get; set; }
+
+        public string Spol { get; set; }
 
         public override string ToString()
         {

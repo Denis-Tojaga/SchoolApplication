@@ -12,9 +12,15 @@ namespace SchoolApp.ChildForms
 {
     public partial class frmNotifications : Form
     {
+        Profesor _user;
         public frmNotifications()
         {
             InitializeComponent();
+        }
+
+        public frmNotifications(object user ) : this()
+        {
+            _user = user as Profesor;
         }
     }
 }

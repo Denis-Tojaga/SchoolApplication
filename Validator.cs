@@ -18,6 +18,8 @@ namespace SchoolApp
                 validno = false;
             else if (control is DateTimePicker && (control as DateTimePicker).Value == null)
                 validno = false;
+            else if (control is RadioButton && (control as RadioButton).Checked == false)
+                validno = false;
 
             if (!validno)
             {
