@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
             this.label1 = new System.Windows.Forms.Label();
             this.panelAll = new System.Windows.Forms.Panel();
             this.lblExitEditMode = new System.Windows.Forms.Label();
@@ -139,7 +138,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Image = global::SchoolApp.Properties.Resources.skolaPng;
             this.pictureBox2.Location = new System.Drawing.Point(605, 15);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(36, 32);
