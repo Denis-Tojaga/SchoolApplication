@@ -25,6 +25,9 @@ namespace SchoolApp
 
         }
 
+
+
+
         /// <summary>
         /// Unlocks the password on click, so the user can see it
         /// </summary>
@@ -42,6 +45,9 @@ namespace SchoolApp
         }
 
 
+
+
+
         /// <summary>
         /// Opens up the file dialog so user can pick a picture from gallery
         /// </summary>
@@ -53,6 +59,8 @@ namespace SchoolApp
                 pbSlikaProfesora.Image = Image.FromFile(ofdOdabirSlike.FileName);
             }
         }
+
+
 
 
         //Closes the current form
@@ -71,6 +79,13 @@ namespace SchoolApp
         {
             RegistrujKorisnika();
         }
+
+
+
+
+        /// <summary>
+        /// Adds new user with all entered data to database
+        /// </summary>
         private void RegistrujKorisnika()
         {
             try
@@ -110,9 +125,14 @@ namespace SchoolApp
         private string ProvjeriOznaceniButton()
         {
             if(rbMale.Checked ==true)
-                return "Muski";
-            return "Zenski";
+                return "Musko";
+            return "Zensko";
         }
+
+
+
+
+
 
 
         /// <summary>

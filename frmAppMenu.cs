@@ -22,16 +22,17 @@ namespace SchoolApp
             InitializeComponent();
             _profesor = new Profesor();
         }
-
         public frmAppMenu(Profesor profesor):this()
         {
             _profesor = profesor;
         }
-
         private void frmAppMenu_Load(object sender, EventArgs e)
         {
            lblCurrentUser.Text += _profesor.KorisnickoIme;
         }
+
+
+
 
 
         ///Method which opens up a child forms on button click
@@ -76,12 +77,30 @@ namespace SchoolApp
 
 
 
+
+
+        /// <summary>
+        /// Opens up a school site on link label click
+        /// </summary>
+        private void lblLinkStranice_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://fit.ba/");
+            Process.Start(sInfo);
+        }
+
+
+
+
+
+
+        /// <summary>
+        /// All meni buttons open up individual form that is valid for the clicked button
+        /// </summary>
         private void btnHome_Click(object sender, EventArgs e)
         {
             frmHome homeForm = new frmHome(_profesor);
             OpenChildForm(homeForm, sender);
         }
-
         private void btnNotifications_Click(object sender, EventArgs e)
         {
             frmNotifications notificationForm = new frmNotifications(_profesor);
@@ -89,10 +108,5 @@ namespace SchoolApp
             
         }
 
-        private void lblLinkStranice_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            ProcessStartInfo sInfo = new ProcessStartInfo("https://fit.ba/");
-            Process.Start(sInfo);
-        }
     }
 }

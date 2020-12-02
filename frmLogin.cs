@@ -41,7 +41,10 @@ namespace SchoolApp
                 if(ValidirajPolja())
                 {
                     Profesor profesor = PretragaProfesora(txtUsername.Text, txtPassword.Text);
-                      PokretanjeGlavneForme(profesor);
+                    if(profesor!=null)
+                        PokretanjeGlavneForme(profesor);
+                    else
+                        MessageBox.Show($"Korisnik nije pronadjen!");
                 }
             }
             catch (Exception ex)
@@ -76,11 +79,13 @@ namespace SchoolApp
         /// </summary>
         private void txtUsername_MouseClick(object sender, MouseEventArgs e)
         {
-            txtUsername.Text = "";
+            if(txtUsername.Text=="Username")
+                 txtUsername.Text = "";
         }
         private void txtPassword_MouseClick(object sender, MouseEventArgs e)
         {
-             txtPassword.Text = "";
+            if (txtPassword.Text == "Password")
+                txtPassword.Text = "";
         }
         private void txtPassword_KeyDown(object sender, KeyEventArgs e)
         {

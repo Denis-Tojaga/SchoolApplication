@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,19 +13,31 @@ namespace SchoolApp.ChildForms
 {
     public partial class frmHome : Form
     {
+        DatabaseConnection databaseConnection = new DatabaseConnection();
+        private const string upozorenje = "The field is not valid!";
         public static Profesor _currentProfessor;
         public frmHome()
         {
             InitializeComponent();
             _currentProfessor = new Profesor();
         }
-
         public frmHome(object user) : this()
         {
             _currentProfessor = user as Profesor;
         }
+        private void frmHome_Load(object sender, EventArgs e)
+        {
+            LoadUser();
+        }
 
 
+
+
+
+
+        /// <summary>
+        /// Draws the border of the panels
+        /// </summary>
         private void panelUserInfo_Paint(object sender, PaintEventArgs e)
         {
           ControlPaint.DrawBorder(e.Graphics,panelUserInfo.ClientRectangle, Color.FromArgb(30, 115, 172),ButtonBorderStyle.Solid);
@@ -34,16 +47,20 @@ namespace SchoolApp.ChildForms
             ControlPaint.DrawBorder(e.Graphics, panelUserInfo.ClientRectangle, Color.FromArgb(30, 115, 172), ButtonBorderStyle.Solid);
         }
 
-        private void frmHome_Load(object sender, EventArgs e)
-        {
-            LoadUser();
-        }
 
+
+
+
+
+
+        /// <summary>
+        /// Loads the data about currently logged professor
+        /// </summary>
         private void LoadUser()
         {
             try
             {
-                UcitajPolja(_currentProfessor);
+                UcitajPolja();
                 OnemoguciPolja();
             }
             catch (Exception ex)
@@ -51,9 +68,60 @@ namespace SchoolApp.ChildForms
                 MessageBox.Show($"{ex.Message} {ex.InnerException?.Message}");
             }
         }
+        private void UcitajPolja()
+        {
+            if(_currentProfessor != null)
+            {
+                txtIme.Text = _currentProfessor.Ime;
+                txtPrezime.Text = _currentProfessor.Prezime;
+                txtKorisnickoIme.Text = _currentProfessor.KorisnickoIme;
+                txtLozinka.Text = _currentProfessor.Lozinka;
+                txtDatumRodjenja.Text = _currentProfessor.DatumRodjenja;
+                if (_currentProfessor.Spol == "Musko")
+                    rbMale.Checked = true;
+                else
+                    rbFemale.Checked = true;
+                txtEmail.Text = _currentProfessor.Email;
+                txtJMBG.Text = _currentProfessor.JMBG;
+                txtBrojTelefona.Text = _currentProfessor.BrojTelefona;
+                txtUcionica.Text = _currentProfessor.Ucionica;
+                txtRadnaPozicija.Text = _currentProfessor.RadnaPozicija;
+                if (_currentProfessor.Slika.Length != 0)
+                    pbSlikaProfesora.Image = ImageConventer.FromByteToImage(_currentProfessor.Slika);
+                else
+                    pbSlikaProfesora.Image = null;
+                txtDatumZaposlenja.Text = _currentProfessor.DatumZaposlenja;
+            }else
+                MessageBox.Show($"Nije moguce ucitati podatke!");
+        }
 
+
+
+
+        /// <summary>
+        /// Turns the edit mode on
+        /// </summary>
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            OmoguciPolja();
+        }
+
+
+
+
+
+
+
+        /// <summary>
+        /// Enables and disables all controls on click
+        /// </summary>
         private void OnemoguciPolja()
         {
+            lblExitEditMode.Hide();
+            btnExitEditMode.Hide();
+            btnEdit.Show();
+            btnSaveChanges.Hide();
+            btnChoosePhoto.Hide();
             txtIme.Enabled = false;
             txtPrezime.Enabled = false;
             txtDatumZaposlenja.Enabled = false;
@@ -69,30 +137,145 @@ namespace SchoolApp.ChildForms
             rbFemale.Enabled = false;
             rbMale.Enabled = false;
         }
-
-        private void UcitajPolja(Profesor profesor)
+        private void OmoguciPolja()
         {
-            if(profesor!=null)
+            btnEdit.Hide();
+            lblExitEditMode.Show();
+            btnExitEditMode.Show();
+            btnChoosePhoto.Show();
+            btnSaveChanges.Show();
+            txtIme.Enabled = true;
+            txtPrezime.Enabled = true;
+            txtDatumZaposlenja.Enabled = true;
+            txtDatumRodjenja.Enabled = true;
+            txtKorisnickoIme.Enabled = true;
+            txtLozinka.Enabled = true;
+            txtEmail.Enabled = true;
+            txtBrojTelefona.Enabled = true;
+            txtUcionica.Enabled = true;
+            txtRadnaPozicija.Enabled = true;
+            pbSlikaProfesora.Enabled = true;
+            txtJMBG.Enabled = true;
+            rbFemale.Enabled = true;
+            rbMale.Enabled = true;
+        }
+
+
+
+
+
+        /// <summary>
+        /// Exits edit mode and again disables input fields
+        /// </summary>
+        private void btnExitEditMode_Click(object sender, EventArgs e)
+        {
+            ResetujSve();
+            OnemoguciPolja();
+        }
+        private void ResetujSve()
+        {
+            UcitajPolja();
+        }
+
+
+
+
+
+        /// <summary>
+        /// Validates if the changes weren't changed properly
+        /// </summary>
+        private bool ValidirajPromjene()
+        {
+            return ValidirajPolje(txtIme, err, upozorenje) && ValidirajPolje(txtPrezime, err, upozorenje) && ValidirajPolje(txtDatumRodjenja, err, upozorenje)
+                && ValidirajPolje(txtKorisnickoIme, err, upozorenje) && ValidirajPolje(txtLozinka, err, upozorenje) && ValidirajPolje(txtEmail, err, upozorenje)
+                && ValidirajPolje(txtJMBG, err, upozorenje) && ValidirajPolje(txtBrojTelefona, err, upozorenje) && ValidirajPolje(txtUcionica, err, upozorenje)
+                && ValidirajPolje(txtRadnaPozicija, err, upozorenje) && ValidirajPolje(rbMale, err, upozorenje) || ValidirajPolje(rbFemale, err, upozorenje)
+                && ValidirajPolje(txtDatumZaposlenja,err,upozorenje) && ValidirajPolje(pbSlikaProfesora,err,upozorenje);
+        }
+        private bool ValidirajPolje(Control controla,ErrorProvider err,string poruka)
+        {
+            bool validno = true;
+            if (controla is TextBox && string.IsNullOrEmpty((controla as TextBox).Text))
+                validno = false;
+            else if (controla is PictureBox && (controla as PictureBox).Image == null)
+                validno = false;
+            else if (controla is RadioButton && (controla as RadioButton).Checked == false)
+                validno = false;
+
+            if(!validno)
             {
-                txtIme.Text = profesor.Ime;
-                txtPrezime.Text = profesor.Prezime;
-                txtKorisnickoIme.Text = profesor.KorisnickoIme;
-                txtLozinka.Text = profesor.Lozinka;
-                txtDatumRodjenja.Text = profesor.DatumRodjenja;
-                if (profesor.Spol == "Muski")
-                    rbMale.Checked = true;
+                err.SetError(controla, poruka);
+                return false;
+            }
+            err.Clear();
+            return true;
+        }
+
+
+
+
+        /// <summary>
+        /// Loads the chosen photo to picture box
+        /// </summary>
+        private void btnChoosePhoto_Click(object sender, EventArgs e)
+        {
+            if(ofdOdabirSlike.ShowDialog() == DialogResult.OK)
+            {
+                string putanja = ofdOdabirSlike.FileName;
+                Image slikaUcitana = Image.FromFile(putanja);
+                pbSlikaProfesora.Image = slikaUcitana;
+            }
+        }
+
+
+
+
+        /// <summary>
+        /// Saves all changes , resets all input fields and again disables everything until next edit mode on
+        /// </summary>
+        private void btnSaveChanges_Click(object sender, EventArgs e)
+        {
+            if(ValidirajPromjene())
+            {
+                UpdateProfessorDetails();
+                ResetujSve();
+                OnemoguciPolja();
+            }
+        }
+
+
+        /// <summary>
+        /// Makes an update in database and in form fields with entered data
+        /// </summary>
+        private void UpdateProfessorDetails()
+        {
+            try
+            {
+                _currentProfessor.Ime = txtIme.Text;
+                _currentProfessor.Prezime = txtPrezime.Text;
+                _currentProfessor.KorisnickoIme = txtKorisnickoIme.Text;
+                _currentProfessor.Lozinka = txtLozinka.Text;
+                _currentProfessor.DatumRodjenja = txtDatumRodjenja.Text;
+                _currentProfessor.DatumZaposlenja = txtDatumZaposlenja.Text;
+                _currentProfessor.Email = txtEmail.Text;
+                _currentProfessor.JMBG = txtJMBG.Text;
+                _currentProfessor.Ucionica = txtUcionica.Text;
+                _currentProfessor.RadnaPozicija = txtRadnaPozicija.Text;
+                _currentProfessor.BrojTelefona = txtBrojTelefona.Text;
+                if (rbMale.Checked)
+                    _currentProfessor.Spol = "Musko";
                 else
-                    rbFemale.Checked = true;
-                txtEmail.Text = profesor.Email;
-                txtJMBG.Text = profesor.JMBG;
-                txtBrojTelefona.Text = profesor.BrojTelefona;
-                txtUcionica.Text = profesor.Ucionica;
-                txtRadnaPozicija.Text = profesor.RadnaPozicija;
-                if(ImageConventer.FromByteToImage(profesor.Slika)!=null)
-                pbSlikaProfesora.Image = ImageConventer.FromByteToImage(profesor.Slika);
-                txtDatumZaposlenja.Text = profesor.DatumZaposlenja;
-            }else
-                MessageBox.Show($"Nije moguce ucitati podatke!");
+                    _currentProfessor.Spol = "Zensko";
+                _currentProfessor.Slika = ImageConventer.FromImageToByte(pbSlikaProfesora.Image);
+
+                databaseConnection.Entry(_currentProfessor).State = EntityState.Modified;
+                databaseConnection.SaveChanges();
+                MessageBox.Show($"Data successfully changed!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Greska u povezivanju sa bazom -> {ex.Message} {ex.InnerException?.Message}");
+            }
         }
     }
 }
