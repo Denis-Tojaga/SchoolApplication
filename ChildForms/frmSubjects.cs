@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace SchoolApp.ChildForms
 {
-    public partial class frmNotifications : Form
+    public partial class frmSubjects : Form
     {
-        Profesor _user;
-        public frmNotifications()
+        public frmSubjects()
         {
             InitializeComponent();
-        }
-
-        public frmNotifications(object user ) : this()
-        {
-            _user = user as Profesor;
         }
     }
 }

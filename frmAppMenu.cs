@@ -101,12 +101,10 @@ namespace SchoolApp
             frmHome homeForm = new frmHome(_profesor);
             OpenChildForm(homeForm, sender);
         }
-        private void btnNotifications_Click(object sender, EventArgs e)
+        private void btnStudents_Click_1(object sender, EventArgs e)
         {
-            frmNotifications notificationForm = new frmNotifications(_profesor);
-            OpenChildForm(notificationForm, sender);
-            
+            frmStudents students = new frmStudents(_profesor);
+            OpenChildForm(students, sender);
         }
-
     }
 }

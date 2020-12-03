@@ -11,6 +11,7 @@ namespace SchoolApp
     {
         public  DbSet<Profesor> Profesori { get; set; }
         public  DbSet<Predmet> Predmeti { get; set; }
+        public  DbSet<Student> Studenti { get; set; }
 
         public DatabaseConnection() : base("PutanjaDoBaze")
         {

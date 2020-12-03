@@ -1,6 +1,6 @@
 ﻿namespace SchoolApp.ChildForms
 {
-    partial class frmNotifications
+    partial class frmSubjects
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // frmNotifications
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "frmNotifications";
-            this.Text = "Notifications";
-            this.ResumeLayout(false);
-
+            this.Text = "frmSubjects";
         }
 
         #endregion

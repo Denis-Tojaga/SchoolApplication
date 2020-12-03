@@ -27,6 +27,7 @@ namespace SchoolApp.ChildForms
         }
         private void frmHome_Load(object sender, EventArgs e)
         {
+            SakrijZvjezdice();
             LoadUser();
         }
 
@@ -70,7 +71,7 @@ namespace SchoolApp.ChildForms
         }
         private void UcitajPolja()
         {
-            if(_currentProfessor != null)
+            if (_currentProfessor != null)
             {
                 txtIme.Text = _currentProfessor.Ime;
                 txtPrezime.Text = _currentProfessor.Prezime;
@@ -169,6 +170,7 @@ namespace SchoolApp.ChildForms
         /// </summary>
         private void btnExitEditMode_Click(object sender, EventArgs e)
         {
+            SakrijZvjezdice();
             ResetujSve();
             OnemoguciPolja();
         }
@@ -237,11 +239,13 @@ namespace SchoolApp.ChildForms
         {
             if(ValidirajPromjene())
             {
+                SakrijZvjezdice();
+                OnemoguciPolja();
                 UpdateProfessorDetails();
                 ResetujSve();
-                OnemoguciPolja();
             }
         }
+
 
 
         /// <summary>
@@ -276,6 +280,76 @@ namespace SchoolApp.ChildForms
             {
                 MessageBox.Show($"Greska u povezivanju sa bazom -> {ex.Message} {ex.InnerException?.Message}");
             }
+        }
+
+
+
+
+
+
+        /// <summary>
+        /// Displays an edit red star so we can track our changes, cancels them when changes are done
+        /// </summary>
+        private void PrikaziEditStar(Label label)
+        {
+            label.Show();
+            label.ForeColor = Color.Red;
+        }
+        private void SakrijZvjezdice()
+        {
+            lblZ1.Hide();
+            lblZ2.Hide();
+            lblZ3.Hide();
+            lblZ4.Hide();
+            lblZ5.Hide();
+            lblZ6.Hide();
+            lblZ7.Hide();
+            lblZ8.Hide();
+            lblZ9.Hide();
+            lblZ10.Hide();
+        }
+
+        private void txtIme_MouseClick(object sender, EventArgs e)
+        {
+            PrikaziEditStar(lblZ1);
+        }
+        private void txtPrezime_MouseClick(object sender, MouseEventArgs e)
+        {
+            PrikaziEditStar(lblZ2);
+        }
+        private void txtDatumRodjenja_MouseClick(object sender, MouseEventArgs e)
+        {
+            PrikaziEditStar(lblZ3);
+        }
+        private void txtKorisnickoIme_MouseClick(object sender, MouseEventArgs e)
+        {
+            PrikaziEditStar(lblZ4);
+        }
+        private void txtLozinka_MouseClick(object sender, MouseEventArgs e)
+        {
+            PrikaziEditStar(lblZ5);
+        }
+        private void txtEmail_MouseClick(object sender, MouseEventArgs e)
+        {
+            PrikaziEditStar(lblZ6);
+
+        }
+        private void txtJMBG_MouseClick(object sender, MouseEventArgs e)
+        {
+            PrikaziEditStar(lblZ7);
+        }
+        private void txtBrojTelefona_MouseClick(object sender, MouseEventArgs e)
+        {
+            PrikaziEditStar(lblZ8);
+
+        }
+        private void txtUcionica_MouseClick(object sender, MouseEventArgs e)
+        {
+            PrikaziEditStar(lblZ9);
+        }
+        private void txtRadnaPozicija_MouseClick(object sender, MouseEventArgs e)
+        {
+            PrikaziEditStar(lblZ10);
         }
     }
 }

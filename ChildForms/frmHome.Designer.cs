@@ -45,6 +45,16 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panelUserInfo = new System.Windows.Forms.Panel();
+            this.lblZ10 = new System.Windows.Forms.Label();
+            this.lblZ8 = new System.Windows.Forms.Label();
+            this.lblZ9 = new System.Windows.Forms.Label();
+            this.lblZ7 = new System.Windows.Forms.Label();
+            this.lblZ6 = new System.Windows.Forms.Label();
+            this.lblZ4 = new System.Windows.Forms.Label();
+            this.lblZ5 = new System.Windows.Forms.Label();
+            this.lblZ3 = new System.Windows.Forms.Label();
+            this.lblZ2 = new System.Windows.Forms.Label();
+            this.lblZ1 = new System.Windows.Forms.Label();
             this.txtDatumRodjenja = new System.Windows.Forms.TextBox();
             this.txtRadnaPozicija = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -67,7 +77,7 @@
             this.txtPrezime = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtIme = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblIme = new System.Windows.Forms.Label();
             this.ofdOdabirSlike = new System.Windows.Forms.OpenFileDialog();
             this.err = new System.Windows.Forms.ErrorProvider(this.components);
             this.panelAll.SuspendLayout();
@@ -267,6 +277,16 @@
             // 
             this.panelUserInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panelUserInfo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelUserInfo.Controls.Add(this.lblZ10);
+            this.panelUserInfo.Controls.Add(this.lblZ8);
+            this.panelUserInfo.Controls.Add(this.lblZ9);
+            this.panelUserInfo.Controls.Add(this.lblZ7);
+            this.panelUserInfo.Controls.Add(this.lblZ6);
+            this.panelUserInfo.Controls.Add(this.lblZ4);
+            this.panelUserInfo.Controls.Add(this.lblZ5);
+            this.panelUserInfo.Controls.Add(this.lblZ3);
+            this.panelUserInfo.Controls.Add(this.lblZ2);
+            this.panelUserInfo.Controls.Add(this.lblZ1);
             this.panelUserInfo.Controls.Add(this.txtDatumRodjenja);
             this.panelUserInfo.Controls.Add(this.txtRadnaPozicija);
             this.panelUserInfo.Controls.Add(this.label13);
@@ -289,12 +309,122 @@
             this.panelUserInfo.Controls.Add(this.txtPrezime);
             this.panelUserInfo.Controls.Add(this.label4);
             this.panelUserInfo.Controls.Add(this.txtIme);
-            this.panelUserInfo.Controls.Add(this.label3);
+            this.panelUserInfo.Controls.Add(this.lblIme);
             this.panelUserInfo.Location = new System.Drawing.Point(5, 50);
             this.panelUserInfo.Name = "panelUserInfo";
             this.panelUserInfo.Size = new System.Drawing.Size(538, 392);
             this.panelUserInfo.TabIndex = 0;
             this.panelUserInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelUserInfo_Paint);
+            // 
+            // lblZ10
+            // 
+            this.lblZ10.AutoSize = true;
+            this.lblZ10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZ10.ForeColor = System.Drawing.Color.Red;
+            this.lblZ10.Location = new System.Drawing.Point(132, 308);
+            this.lblZ10.Name = "lblZ10";
+            this.lblZ10.Size = new System.Drawing.Size(15, 20);
+            this.lblZ10.TabIndex = 33;
+            this.lblZ10.Text = "*";
+            // 
+            // lblZ8
+            // 
+            this.lblZ8.AutoSize = true;
+            this.lblZ8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZ8.ForeColor = System.Drawing.Color.Red;
+            this.lblZ8.Location = new System.Drawing.Point(116, 243);
+            this.lblZ8.Name = "lblZ8";
+            this.lblZ8.Size = new System.Drawing.Size(15, 20);
+            this.lblZ8.TabIndex = 32;
+            this.lblZ8.Text = "*";
+            // 
+            // lblZ9
+            // 
+            this.lblZ9.AutoSize = true;
+            this.lblZ9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZ9.ForeColor = System.Drawing.Color.Red;
+            this.lblZ9.Location = new System.Drawing.Point(363, 240);
+            this.lblZ9.Name = "lblZ9";
+            this.lblZ9.Size = new System.Drawing.Size(15, 20);
+            this.lblZ9.TabIndex = 31;
+            this.lblZ9.Text = "*";
+            // 
+            // lblZ7
+            // 
+            this.lblZ7.AutoSize = true;
+            this.lblZ7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZ7.ForeColor = System.Drawing.Color.Red;
+            this.lblZ7.Location = new System.Drawing.Point(394, 183);
+            this.lblZ7.Name = "lblZ7";
+            this.lblZ7.Size = new System.Drawing.Size(15, 20);
+            this.lblZ7.TabIndex = 30;
+            this.lblZ7.Text = "*";
+            // 
+            // lblZ6
+            // 
+            this.lblZ6.AutoSize = true;
+            this.lblZ6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZ6.ForeColor = System.Drawing.Color.Red;
+            this.lblZ6.Location = new System.Drawing.Point(116, 183);
+            this.lblZ6.Name = "lblZ6";
+            this.lblZ6.Size = new System.Drawing.Size(15, 20);
+            this.lblZ6.TabIndex = 29;
+            this.lblZ6.Text = "*";
+            // 
+            // lblZ4
+            // 
+            this.lblZ4.AutoSize = true;
+            this.lblZ4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZ4.ForeColor = System.Drawing.Color.Red;
+            this.lblZ4.Location = new System.Drawing.Point(86, 103);
+            this.lblZ4.Name = "lblZ4";
+            this.lblZ4.Size = new System.Drawing.Size(15, 20);
+            this.lblZ4.TabIndex = 28;
+            this.lblZ4.Text = "*";
+            // 
+            // lblZ5
+            // 
+            this.lblZ5.AutoSize = true;
+            this.lblZ5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZ5.ForeColor = System.Drawing.Color.Red;
+            this.lblZ5.Location = new System.Drawing.Point(253, 103);
+            this.lblZ5.Name = "lblZ5";
+            this.lblZ5.Size = new System.Drawing.Size(15, 20);
+            this.lblZ5.TabIndex = 27;
+            this.lblZ5.Text = "*";
+            // 
+            // lblZ3
+            // 
+            this.lblZ3.AutoSize = true;
+            this.lblZ3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZ3.ForeColor = System.Drawing.Color.Red;
+            this.lblZ3.Location = new System.Drawing.Point(454, 25);
+            this.lblZ3.Name = "lblZ3";
+            this.lblZ3.Size = new System.Drawing.Size(15, 20);
+            this.lblZ3.TabIndex = 26;
+            this.lblZ3.Text = "*";
+            // 
+            // lblZ2
+            // 
+            this.lblZ2.AutoSize = true;
+            this.lblZ2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZ2.ForeColor = System.Drawing.Color.Red;
+            this.lblZ2.Location = new System.Drawing.Point(265, 25);
+            this.lblZ2.Name = "lblZ2";
+            this.lblZ2.Size = new System.Drawing.Size(15, 20);
+            this.lblZ2.TabIndex = 25;
+            this.lblZ2.Text = "*";
+            // 
+            // lblZ1
+            // 
+            this.lblZ1.AutoSize = true;
+            this.lblZ1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZ1.ForeColor = System.Drawing.Color.Red;
+            this.lblZ1.Location = new System.Drawing.Point(98, 26);
+            this.lblZ1.Name = "lblZ1";
+            this.lblZ1.Size = new System.Drawing.Size(15, 20);
+            this.lblZ1.TabIndex = 24;
+            this.lblZ1.Text = "*";
             // 
             // txtDatumRodjenja
             // 
@@ -306,6 +436,7 @@
             this.txtDatumRodjenja.Name = "txtDatumRodjenja";
             this.txtDatumRodjenja.Size = new System.Drawing.Size(126, 28);
             this.txtDatumRodjenja.TabIndex = 23;
+            this.txtDatumRodjenja.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtDatumRodjenja_MouseClick);
             // 
             // txtRadnaPozicija
             // 
@@ -317,6 +448,7 @@
             this.txtRadnaPozicija.Name = "txtRadnaPozicija";
             this.txtRadnaPozicija.Size = new System.Drawing.Size(199, 28);
             this.txtRadnaPozicija.TabIndex = 22;
+            this.txtRadnaPozicija.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtRadnaPozicija_MouseClick);
             // 
             // label13
             // 
@@ -338,6 +470,7 @@
             this.txtUcionica.Name = "txtUcionica";
             this.txtUcionica.Size = new System.Drawing.Size(199, 28);
             this.txtUcionica.TabIndex = 20;
+            this.txtUcionica.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtUcionica_MouseClick);
             // 
             // label12
             // 
@@ -359,6 +492,7 @@
             this.txtBrojTelefona.Name = "txtBrojTelefona";
             this.txtBrojTelefona.Size = new System.Drawing.Size(199, 28);
             this.txtBrojTelefona.TabIndex = 18;
+            this.txtBrojTelefona.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtBrojTelefona_MouseClick);
             // 
             // label11
             // 
@@ -380,6 +514,7 @@
             this.txtJMBG.Name = "txtJMBG";
             this.txtJMBG.Size = new System.Drawing.Size(143, 28);
             this.txtJMBG.TabIndex = 16;
+            this.txtJMBG.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtJMBG_MouseClick);
             // 
             // label10
             // 
@@ -401,6 +536,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(297, 28);
             this.txtEmail.TabIndex = 14;
+            this.txtEmail.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtEmail_MouseClick);
             // 
             // label9
             // 
@@ -456,6 +592,7 @@
             this.txtLozinka.Name = "txtLozinka";
             this.txtLozinka.Size = new System.Drawing.Size(126, 28);
             this.txtLozinka.TabIndex = 9;
+            this.txtLozinka.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtLozinka_MouseClick);
             // 
             // label6
             // 
@@ -477,6 +614,7 @@
             this.txtKorisnickoIme.Name = "txtKorisnickoIme";
             this.txtKorisnickoIme.Size = new System.Drawing.Size(122, 28);
             this.txtKorisnickoIme.TabIndex = 7;
+            this.txtKorisnickoIme.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtKorisnickoIme_MouseClick);
             // 
             // label7
             // 
@@ -508,6 +646,7 @@
             this.txtPrezime.Name = "txtPrezime";
             this.txtPrezime.Size = new System.Drawing.Size(126, 28);
             this.txtPrezime.TabIndex = 3;
+            this.txtPrezime.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtPrezime_MouseClick);
             // 
             // label4
             // 
@@ -529,16 +668,17 @@
             this.txtIme.Name = "txtIme";
             this.txtIme.Size = new System.Drawing.Size(122, 28);
             this.txtIme.TabIndex = 1;
+            this.txtIme.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtIme_MouseClick);
             // 
-            // label3
+            // lblIme
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 26);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 19);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "First Name";
+            this.lblIme.AutoSize = true;
+            this.lblIme.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIme.Location = new System.Drawing.Point(21, 26);
+            this.lblIme.Name = "lblIme";
+            this.lblIme.Size = new System.Drawing.Size(80, 19);
+            this.lblIme.TabIndex = 0;
+            this.lblIme.Text = "First Name";
             // 
             // ofdOdabirSlike
             // 
@@ -584,7 +724,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelUserInfo;
         private System.Windows.Forms.TextBox txtIme;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblIme;
         private System.Windows.Forms.RadioButton rbFemale;
         private System.Windows.Forms.RadioButton rbMale;
         private System.Windows.Forms.Label label8;
@@ -619,5 +759,15 @@
         private System.Windows.Forms.Label lblExitEditMode;
         private System.Windows.Forms.OpenFileDialog ofdOdabirSlike;
         private System.Windows.Forms.ErrorProvider err;
+        private System.Windows.Forms.Label lblZ10;
+        private System.Windows.Forms.Label lblZ8;
+        private System.Windows.Forms.Label lblZ9;
+        private System.Windows.Forms.Label lblZ7;
+        private System.Windows.Forms.Label lblZ6;
+        private System.Windows.Forms.Label lblZ4;
+        private System.Windows.Forms.Label lblZ5;
+        private System.Windows.Forms.Label lblZ3;
+        private System.Windows.Forms.Label lblZ2;
+        private System.Windows.Forms.Label lblZ1;
     }
 }
