@@ -149,6 +149,10 @@ namespace SchoolApp
         }
 
 
+
+
+
+
         /// <summary>
         /// Generates mail for user, format is name.surname@edu.fit.ba
         /// </summary>
