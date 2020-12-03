@@ -34,13 +34,8 @@ namespace SchoolApp.ChildForms
         private void UcitajPodatke()
         {
             lbViewOf.Text += " " + _user.KorisnickoIme;
-            if(konekcijaNaBazu.Studenti!=null)
-            {
-                dgvStudents.DataSource = null;
-                 dgvStudents.DataSource = konekcijaNaBazu.Studenti;
-            }
-            else
-                MessageBox.Show($"Trenutno nema studenata u bazi, pokusajte dodati jednog!");
+            dgvStudents.DataSource = null;
+            dgvStudents.DataSource = konekcijaNaBazu.Studenti;
         }
     }
 }
