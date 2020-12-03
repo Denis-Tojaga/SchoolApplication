@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SchoolApp
 {
-    [Table("Studenti")]
+    [Table("Student")]
     public class Student
     {
         public int StudentID { get; set; }
@@ -17,6 +17,7 @@ namespace SchoolApp
         public string ImeOca { get; set; }
         public string Email { get; set; }
         public string DatumRodjenja { get; set; }
+        public string Spol { get; set; }
         public int Godine { get; set; }
         public byte[] Slika { get; set; }
         public string GodinaStudija { get; set; }

@@ -24,6 +24,9 @@ namespace SchoolApp.ChildForms
             _user = user as Profesor;
             dgvStudents.AutoGenerateColumns = false;
             dgvStudents.EnableHeadersVisualStyles = false;
+            DataGridViewColumn prvaKolona = dgvStudents.Columns[0];
+            prvaKolona.HeaderCell.Style.BackColor = Color.White;
+            prvaKolona.HeaderCell.Style.ForeColor = Color.FromArgb(37, 140, 219);
         }
 
         private void frmStudents_Load(object sender, EventArgs e)
@@ -34,8 +37,17 @@ namespace SchoolApp.ChildForms
         private void UcitajPodatke()
         {
             lbViewOf.Text += " " + _user.KorisnickoIme;
-            dgvStudents.DataSource = null;
-            dgvStudents.DataSource = konekcijaNaBazu.Studenti;
+            try
+            {
+                var studenti = konekcijaNaBazu.Studenti;
+                dgvStudents.DataSource = null;
+                dgvStudents.DataSource = studenti.ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message} {ex.InnerException?.Message}");
+            }
+
         }
     }
 }
