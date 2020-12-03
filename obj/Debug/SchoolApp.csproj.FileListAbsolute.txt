@@ -39,3 +39,4 @@ C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.frmAppMenu
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.frmRegistracija.resources
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.ChildForms.frmHome.resources
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.ChildForms.frmStudents.resources
+C:\Users\Denis\Documents\GitHub\SchoolApplication\bin\Debug\schoolDatabase.db
