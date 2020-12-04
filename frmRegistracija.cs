@@ -29,7 +29,7 @@ namespace SchoolApp
 
 
         /// <summary>
-        /// Unlocks the password on click, so the user can see it
+        /// Unlocks the password input on click, so the user can see it
         /// </summary>
         private void pictureBox3_Click(object sender, EventArgs e)
         {
