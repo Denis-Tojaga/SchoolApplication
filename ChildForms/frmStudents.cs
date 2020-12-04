@@ -32,29 +32,53 @@ namespace SchoolApp.ChildForms
 
         private void frmStudents_Load(object sender, EventArgs e)
         {
+            lbViewOf.Text += " " + _user.KorisnickoIme;
             UcitajPodatke();
         }
 
+
+        /// <summary>
+        /// Loads all students to data grid, if there are no any its shows up message
+        /// </summary>
         private void UcitajPodatke()
         {
-            lbViewOf.Text += " " + _user.KorisnickoIme;
+            lblMessage.Hide();
             try
             {
                 var studenti = konekcijaNaBazu.Studenti;
-                dgvStudents.DataSource = null;
-                dgvStudents.DataSource = studenti.ToList();
+                if (studenti.Count() != 0)
+                {
+                    dgvStudents.DataSource = null;
+                    dgvStudents.DataSource = studenti.ToList();
+                }else
+                {
+                    dgvStudents.Hide();
+                    lblMessage.Show();
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"{ex.Message} {ex.InnerException?.Message}");
             }
-
         }
 
+
+
+        /// <summary>
+        /// Opens up new form which let us add new student and all his data
+        /// </summary>
         private void btnAddStudent_Click(object sender, EventArgs e)
         {
-            frmAddStudent dodajForma = new frmAddStudent();
-            dodajForma.ShowDialog();
+            try
+            {
+                frmAddStudent dodajForma = new frmAddStudent();
+                if (dodajForma.ShowDialog() == DialogResult.OK)
+                    UcitajPodatke();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message} {ex.InnerException?.Message}");
+            }
         }
     }
 }

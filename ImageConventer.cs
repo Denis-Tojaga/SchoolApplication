@@ -20,8 +20,8 @@ namespace SchoolApp
         public static Image FromByteToImage(byte[] byteArray)
         {
             //convert bytes to stream, load image from that stream
-            MemoryStream ms = new MemoryStream(byteArray);
-            return Image.FromStream(ms);
+                MemoryStream ms = new MemoryStream(byteArray);
+                return Image.FromStream(ms);
         }
 
         public static byte[] FromImageToByte(Image image)
