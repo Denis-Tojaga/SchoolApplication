@@ -33,7 +33,7 @@ namespace SchoolApp.StudentManagementForms
 
 
         /// <summary>
-        /// Loads all years and years of study to combo boxes
+        /// Loads all possible years and years of study to combo boxes
         /// </summary>
         private void UcitajComboBoxove()
         {
@@ -41,9 +41,6 @@ namespace SchoolApp.StudentManagementForms
             UcitajCMBGGodineStudija();
 
         }
-
-
-
         private void UcitajCMBGGodineStudija()
         {
             cmbGodinaStudija.DataSource = null;
@@ -77,7 +74,7 @@ namespace SchoolApp.StudentManagementForms
 
 
         /// <summary>
-        /// Generates an email and index code when text is changed
+        /// Generates an email and index code for new student when text is changed
         /// </summary>
         private void GenerisiIndeksStudentu()
         {
@@ -108,7 +105,7 @@ namespace SchoolApp.StudentManagementForms
 
 
         /// <summary>
-        /// Saves all data from input fields to a new student and adds him to DB
+        /// Validates and saves all data from input fields to a new student and adds him to DB
         /// </summary>
         private void btnSaveStudent_Click(object sender, EventArgs e)
         {
