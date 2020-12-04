@@ -145,6 +145,9 @@
     <EmbeddedResource Include="StudentManagementForms\frmAddStudent.resx">
       <DependentUpon>frmAddStudent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StudentManagementForms\frmShowDetails.resx">
+      <DependentUpon>frmShowDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -217,6 +220,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Screenshot %28169%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detaljiStudent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

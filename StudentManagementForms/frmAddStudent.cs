@@ -23,12 +23,17 @@ namespace SchoolApp.StudentManagementForms
             DodajGodine();
             GenerisiIndeksStudentu();
         }
-
-      
         private void frmAddStudent_Load(object sender, EventArgs e)
         {
             UcitajComboBoxove();
         }
+
+
+
+
+
+
+
 
 
 
@@ -51,6 +56,14 @@ namespace SchoolApp.StudentManagementForms
             cmbGodine.DataSource = null;
             cmbGodine.DataSource = MoguceGodine;
         }
+
+
+
+
+
+
+
+
 
         /// <summary>
         /// Adds all years of study to a list
@@ -93,6 +106,11 @@ namespace SchoolApp.StudentManagementForms
 
 
 
+
+
+
+
+
         /// <summary>
         /// Loads the picture that we have choosen with button
         /// </summary>
@@ -101,6 +119,10 @@ namespace SchoolApp.StudentManagementForms
             if(ofdOdabirSlike.ShowDialog() == DialogResult.OK)
                 pbSlikaStudenta.Image = Image.FromFile(ofdOdabirSlike.FileName);
         }
+
+
+
+
 
 
 
@@ -134,6 +156,9 @@ namespace SchoolApp.StudentManagementForms
 
 
 
+
+
+
         /// <summary>
         /// Validates all input fields and checks their values
         /// </summary>
@@ -148,6 +173,19 @@ namespace SchoolApp.StudentManagementForms
             return Validator.ValidirajPolje(txtIme, err, Upozorenje) && Validator.ValidirajPolje(txtPrezime, err, Upozorenje) && Validator.ValidirajPolje(txtImeOca, err, Upozorenje) &&
                  Validator.ValidirajPolje(cmbGodine, err, Upozorenje) && Validator.ValidirajPolje(cmbGodinaStudija, err, Upozorenje) && Validator.ValidirajPolje(pbSlikaStudenta, err, Upozorenje)
                  && (Validator.ValidirajPolje(rbFemale, err, Upozorenje) || Validator.ValidirajPolje(rbMale,err,Upozorenje));
+        }
+
+
+
+
+
+
+        /// <summary>
+        /// Closes the current form 
+        /// </summary>
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

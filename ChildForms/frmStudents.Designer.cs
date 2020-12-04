@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStudents));
             this.lbViewOf = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,10 +44,17 @@
             this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Dateofbirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblMessage = new System.Windows.Forms.Label();
+            this.txtFilter = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.pbCurrentUser = new System.Windows.Forms.PictureBox();
             this.btnCheckDetails = new System.Windows.Forms.Button();
             this.btnAddStudent = new System.Windows.Forms.Button();
-            this.lblMessage = new System.Windows.Forms.Label();
-            this.pbCurrentUser = new System.Windows.Forms.PictureBox();
+            this.rbPoIndeksu = new System.Windows.Forms.RadioButton();
+            this.rbPoImenu = new System.Windows.Forms.RadioButton();
+            this.rbPoGodiniStudija = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnCancelSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCurrentUser)).BeginInit();
             this.SuspendLayout();
@@ -103,13 +110,13 @@
             this.dgvStudents.BackgroundColor = System.Drawing.Color.White;
             this.dgvStudents.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvStudents.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
-            this.dgvStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
+            this.dgvStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStudents.ColumnHeadersHeight = 45;
             this.dgvStudents.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Numberofindex,
@@ -119,26 +126,26 @@
             this.Gender,
             this.Age,
             this.Dateofbirth});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvStudents.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvStudents.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvStudents.GridColor = System.Drawing.Color.White;
             this.dgvStudents.Location = new System.Drawing.Point(12, 327);
             this.dgvStudents.Name = "dgvStudents";
             this.dgvStudents.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStudents.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStudents.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvStudents.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStudents.Size = new System.Drawing.Size(911, 246);
@@ -200,6 +207,50 @@
             this.Dateofbirth.Name = "Dateofbirth";
             this.Dateofbirth.ReadOnly = true;
             // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Font = new System.Drawing.Font("Comic Sans MS", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessage.Location = new System.Drawing.Point(143, 398);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(715, 48);
+            this.lblMessage.TabIndex = 9;
+            this.lblMessage.Text = "No students available yet,please add one!";
+            // 
+            // txtFilter
+            // 
+            this.txtFilter.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFilter.Location = new System.Drawing.Point(490, 293);
+            this.txtFilter.Name = "txtFilter";
+            this.txtFilter.Size = new System.Drawing.Size(326, 28);
+            this.txtFilter.TabIndex = 11;
+            this.txtFilter.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtFilter_KeyDown);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackgroundImage = global::SchoolApp.Properties.Resources.lupa3;
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Image = global::SchoolApp.Properties.Resources.lupa3;
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSearch.Location = new System.Drawing.Point(822, 293);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(36, 28);
+            this.btnSearch.TabIndex = 12;
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // pbCurrentUser
+            // 
+            this.pbCurrentUser.Image = global::SchoolApp.Properties.Resources.SLIKA;
+            this.pbCurrentUser.Location = new System.Drawing.Point(886, 9);
+            this.pbCurrentUser.Name = "pbCurrentUser";
+            this.pbCurrentUser.Size = new System.Drawing.Size(28, 24);
+            this.pbCurrentUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbCurrentUser.TabIndex = 10;
+            this.pbCurrentUser.TabStop = false;
+            // 
             // btnCheckDetails
             // 
             this.btnCheckDetails.BackColor = System.Drawing.Color.White;
@@ -213,6 +264,7 @@
             this.btnCheckDetails.Size = new System.Drawing.Size(160, 110);
             this.btnCheckDetails.TabIndex = 4;
             this.btnCheckDetails.UseVisualStyleBackColor = false;
+            this.btnCheckDetails.Click += new System.EventHandler(this.btnCheckDetails_Click);
             // 
             // btnAddStudent
             // 
@@ -228,25 +280,67 @@
             this.btnAddStudent.UseVisualStyleBackColor = false;
             this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
             // 
-            // lblMessage
+            // rbPoIndeksu
             // 
-            this.lblMessage.AutoSize = true;
-            this.lblMessage.Font = new System.Drawing.Font("Comic Sans MS", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMessage.Location = new System.Drawing.Point(143, 398);
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(715, 48);
-            this.lblMessage.TabIndex = 9;
-            this.lblMessage.Text = "No students available yet,please add one!";
+            this.rbPoIndeksu.AutoSize = true;
+            this.rbPoIndeksu.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPoIndeksu.Location = new System.Drawing.Point(185, 296);
+            this.rbPoIndeksu.Name = "rbPoIndeksu";
+            this.rbPoIndeksu.Size = new System.Drawing.Size(91, 20);
+            this.rbPoIndeksu.TabIndex = 13;
+            this.rbPoIndeksu.TabStop = true;
+            this.rbPoIndeksu.Text = "Index code";
+            this.rbPoIndeksu.UseVisualStyleBackColor = true;
+            this.rbPoIndeksu.CheckedChanged += new System.EventHandler(this.rbPoIndeksu_CheckedChanged);
             // 
-            // pbCurrentUser
+            // rbPoImenu
             // 
-            this.pbCurrentUser.Image = global::SchoolApp.Properties.Resources.SLIKA;
-            this.pbCurrentUser.Location = new System.Drawing.Point(886, 9);
-            this.pbCurrentUser.Name = "pbCurrentUser";
-            this.pbCurrentUser.Size = new System.Drawing.Size(28, 24);
-            this.pbCurrentUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbCurrentUser.TabIndex = 10;
-            this.pbCurrentUser.TabStop = false;
+            this.rbPoImenu.AutoSize = true;
+            this.rbPoImenu.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPoImenu.Location = new System.Drawing.Point(283, 297);
+            this.rbPoImenu.Name = "rbPoImenu";
+            this.rbPoImenu.Size = new System.Drawing.Size(88, 20);
+            this.rbPoImenu.TabIndex = 14;
+            this.rbPoImenu.TabStop = true;
+            this.rbPoImenu.Text = "First name";
+            this.rbPoImenu.UseVisualStyleBackColor = true;
+            this.rbPoImenu.CheckedChanged += new System.EventHandler(this.rbPoImenu_CheckedChanged);
+            // 
+            // rbPoGodiniStudija
+            // 
+            this.rbPoGodiniStudija.AutoSize = true;
+            this.rbPoGodiniStudija.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPoGodiniStudija.Location = new System.Drawing.Point(375, 298);
+            this.rbPoGodiniStudija.Name = "rbPoGodiniStudija";
+            this.rbPoGodiniStudija.Size = new System.Drawing.Size(108, 20);
+            this.rbPoGodiniStudija.TabIndex = 15;
+            this.rbPoGodiniStudija.TabStop = true;
+            this.rbPoGodiniStudija.Text = "Year of study";
+            this.rbPoGodiniStudija.UseVisualStyleBackColor = true;
+            this.rbPoGodiniStudija.CheckedChanged += new System.EventHandler(this.rbPoGodiniStudija_CheckedChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(70, 293);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 23);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Search by:";
+            // 
+            // btnCancelSearch
+            // 
+            this.btnCancelSearch.BackColor = System.Drawing.Color.Red;
+            this.btnCancelSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelSearch.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelSearch.Location = new System.Drawing.Point(871, 295);
+            this.btnCancelSearch.Name = "btnCancelSearch";
+            this.btnCancelSearch.Size = new System.Drawing.Size(54, 23);
+            this.btnCancelSearch.TabIndex = 17;
+            this.btnCancelSearch.Text = "Cancel";
+            this.btnCancelSearch.UseVisualStyleBackColor = false;
+            this.btnCancelSearch.Click += new System.EventHandler(this.btnCancelSearch_Click);
             // 
             // frmStudents
             // 
@@ -254,6 +348,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(937, 585);
+            this.Controls.Add(this.btnCancelSearch);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.rbPoGodiniStudija);
+            this.Controls.Add(this.rbPoImenu);
+            this.Controls.Add(this.rbPoIndeksu);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtFilter);
             this.Controls.Add(this.pbCurrentUser);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.dgvStudents);
@@ -292,5 +393,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Dateofbirth;
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.PictureBox pbCurrentUser;
+        private System.Windows.Forms.TextBox txtFilter;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.RadioButton rbPoIndeksu;
+        private System.Windows.Forms.RadioButton rbPoImenu;
+        private System.Windows.Forms.RadioButton rbPoGodiniStudija;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnCancelSearch;
     }
 }
