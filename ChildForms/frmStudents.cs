@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolApp.StudentManagementForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -48,6 +49,12 @@ namespace SchoolApp.ChildForms
                 MessageBox.Show($"{ex.Message} {ex.InnerException?.Message}");
             }
 
+        }
+
+        private void btnAddStudent_Click(object sender, EventArgs e)
+        {
+            frmAddStudent dodajForma = new frmAddStudent();
+            dodajForma.ShowDialog();
         }
     }
 }

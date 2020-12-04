@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStudents));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lbViewOf = new System.Windows.Forms.Label();
-            this.btnAddStudent = new System.Windows.Forms.Button();
-            this.btnCheckDetails = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,6 +44,8 @@
             this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Dateofbirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnCheckDetails = new System.Windows.Forms.Button();
+            this.btnAddStudent = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,33 +59,6 @@
             this.lbViewOf.Size = new System.Drawing.Size(148, 24);
             this.lbViewOf.TabIndex = 2;
             this.lbViewOf.Text = "View of:";
-            // 
-            // btnAddStudent
-            // 
-            this.btnAddStudent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
-            this.btnAddStudent.BackgroundImage = global::SchoolApp.Properties.Resources.student2;
-            this.btnAddStudent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAddStudent.FlatAppearance.BorderSize = 2;
-            this.btnAddStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddStudent.Location = new System.Drawing.Point(297, 52);
-            this.btnAddStudent.Name = "btnAddStudent";
-            this.btnAddStudent.Size = new System.Drawing.Size(154, 110);
-            this.btnAddStudent.TabIndex = 3;
-            this.btnAddStudent.UseVisualStyleBackColor = false;
-            // 
-            // btnCheckDetails
-            // 
-            this.btnCheckDetails.BackColor = System.Drawing.Color.White;
-            this.btnCheckDetails.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCheckDetails.BackgroundImage")));
-            this.btnCheckDetails.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCheckDetails.FlatAppearance.BorderSize = 2;
-            this.btnCheckDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCheckDetails.Location = new System.Drawing.Point(469, 52);
-            this.btnCheckDetails.Name = "btnCheckDetails";
-            this.btnCheckDetails.Padding = new System.Windows.Forms.Padding(10);
-            this.btnCheckDetails.Size = new System.Drawing.Size(160, 110);
-            this.btnCheckDetails.TabIndex = 4;
-            this.btnCheckDetails.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -127,13 +100,13 @@
             this.dgvStudents.BackgroundColor = System.Drawing.Color.White;
             this.dgvStudents.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvStudents.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
-            this.dgvStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
+            this.dgvStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStudents.ColumnHeadersHeight = 45;
             this.dgvStudents.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Numberofindex,
@@ -143,26 +116,26 @@
             this.Gender,
             this.Age,
             this.Dateofbirth});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvStudents.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvStudents.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvStudents.GridColor = System.Drawing.Color.White;
             this.dgvStudents.Location = new System.Drawing.Point(12, 327);
             this.dgvStudents.Name = "dgvStudents";
             this.dgvStudents.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStudents.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStudents.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvStudents.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStudents.Size = new System.Drawing.Size(911, 246);
@@ -223,6 +196,34 @@
             this.Dateofbirth.HeaderText = "Date of Birth";
             this.Dateofbirth.Name = "Dateofbirth";
             this.Dateofbirth.ReadOnly = true;
+            // 
+            // btnCheckDetails
+            // 
+            this.btnCheckDetails.BackColor = System.Drawing.Color.White;
+            this.btnCheckDetails.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCheckDetails.BackgroundImage")));
+            this.btnCheckDetails.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCheckDetails.FlatAppearance.BorderSize = 2;
+            this.btnCheckDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckDetails.Location = new System.Drawing.Point(469, 52);
+            this.btnCheckDetails.Name = "btnCheckDetails";
+            this.btnCheckDetails.Padding = new System.Windows.Forms.Padding(10);
+            this.btnCheckDetails.Size = new System.Drawing.Size(160, 110);
+            this.btnCheckDetails.TabIndex = 4;
+            this.btnCheckDetails.UseVisualStyleBackColor = false;
+            // 
+            // btnAddStudent
+            // 
+            this.btnAddStudent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
+            this.btnAddStudent.BackgroundImage = global::SchoolApp.Properties.Resources.student2;
+            this.btnAddStudent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddStudent.FlatAppearance.BorderSize = 2;
+            this.btnAddStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddStudent.Location = new System.Drawing.Point(297, 52);
+            this.btnAddStudent.Name = "btnAddStudent";
+            this.btnAddStudent.Size = new System.Drawing.Size(154, 110);
+            this.btnAddStudent.TabIndex = 3;
+            this.btnAddStudent.UseVisualStyleBackColor = false;
+            this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
             // 
             // frmStudents
             // 
