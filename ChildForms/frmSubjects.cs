@@ -31,6 +31,10 @@ namespace SchoolApp.ChildForms
             dgvPredmeti.AutoGenerateColumns = false;
             _profesor = profesor;
         }
+
+        /// <summary>
+        /// Loads combo boxes and their values
+        /// </summary>
         private void UcitajComboBoxove()
         {
             DodajGodineIBrojPolja();
