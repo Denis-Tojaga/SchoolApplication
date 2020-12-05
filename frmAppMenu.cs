@@ -106,5 +106,11 @@ namespace SchoolApp
             frmStudents students = new frmStudents(_profesor);
             OpenChildForm(students, sender);
         }
+
+        private void btnSubjects_Click(object sender, EventArgs e)
+        {
+            frmSubjects subjects = new frmSubjects(_profesor);
+            OpenChildForm(subjects, sender);
+        }
     }
 }

@@ -118,6 +118,9 @@ namespace SchoolApp
                 MessageBox.Show($"Uneseni podaci nisu validni!");
         }
 
+
+
+
         private void btnRegister_Click(object sender, EventArgs e)
         {
             frmRegistracija registracija = new frmRegistracija();

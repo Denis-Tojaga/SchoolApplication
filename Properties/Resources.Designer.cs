@@ -123,6 +123,16 @@ namespace SchoolApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap knijge {
+            get {
+                object obj = ResourceManager.GetObject("knijge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap knjige {
             get {
                 object obj = ResourceManager.GetObject("knjige", resourceCulture);
@@ -226,6 +236,16 @@ namespace SchoolApp.Properties {
         internal static System.Drawing.Bitmap student2 {
             get {
                 object obj = ResourceManager.GetObject("student2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap subjectLogo {
+            get {
+                object obj = ResourceManager.GetObject("subjectLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
