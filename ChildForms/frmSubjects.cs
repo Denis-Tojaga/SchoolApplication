@@ -26,12 +26,15 @@ namespace SchoolApp.ChildForms
             _profesor = new Profesor();
             UcitajComboBoxove();
         }
-
         public frmSubjects(Profesor profesor) : this()
         {
+            btnAddSubject.Text = "Add exam";
             dgvPredmeti.AutoGenerateColumns = false;
             _profesor = profesor;
         }
+
+
+
 
         /// <summary>
         /// Loads combo boxes and their values
@@ -47,6 +50,7 @@ namespace SchoolApp.ChildForms
             brojPolja.Add(2);
             brojPolja.Add(5);
             brojPolja.Add(10);
+            godineStudija.Add("Default");
             godineStudija.Add("Prva godina");
             godineStudija.Add("Druga godina");
             godineStudija.Add("Treca godina");
@@ -58,15 +62,11 @@ namespace SchoolApp.ChildForms
 
 
 
-
+        //Gets the data from database and selected values in combo boxes, so it does search by default
         private void frmSubjects_Load(object sender, EventArgs e)
         {
             LoadData();
         }
-
-
-
-        //Gets the data from database and selected values in combo boxes, so it does search by default
         private void LoadData()
         {
             try
@@ -75,8 +75,17 @@ namespace SchoolApp.ChildForms
                 dgvPredmeti.DataSource = null;
                 int brojPolja = int.Parse(cmbBrojPolja.SelectedItem.ToString());
                 string godinaStudija = cmbGodinaStudija.SelectedItem.ToString();
-                var predmeti = PrikaziPoBrojPolja(brojPolja, godinaStudija);
+                if (godinaStudija == "Default")
+                {
+                    UcitajSve();
+                    return;
+                }
+                var predmeti = PrikaziPoGodStudijaPolja(godinaStudija);
+                //prvo ucitamo predmete
                 dgvPredmeti.DataSource = predmeti;
+                //zatim sakrijemo redove koji nam ne trebaju
+                for (int i = brojPolja; i <dgvPredmeti.Rows.Count; i++)
+                    dgvPredmeti.Rows[i].Visible = false;
                 lblShowingEntries.Text = "Showing " + predmeti.Count().ToString() + " entries";
             }
             catch (Exception ex)
@@ -85,16 +94,46 @@ namespace SchoolApp.ChildForms
             }
         }
 
-        private List<Predmet> PrikaziPoBrojPolja(int brojPolja,string godinaStudija)
+
+
+
+
+
+        /// <summary>
+        /// Loads all subject by default
+        /// </summary>
+        private void UcitajSve()
         {
-            return konekcijaNaBazu.Predmeti.Where(predmet => predmet.PredmetID <= brojPolja && predmet.GodinaStudija.Contains(godinaStudija)).ToList();
+            try
+            {
+                var predmeti = konekcijaNaBazu.Predmeti;
+                dgvPredmeti.DataSource = null;
+                dgvPredmeti.DataSource = predmeti.ToList();
+                lblShowingEntries.Text = "Showing " + predmeti.Count().ToString() + " entries";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message} {ex.InnerException?.Message}");
+            }
+        }
+
+
+
+
+
+
+        /// <summary>
+        /// Searches subjects in database by their year of study and entry fields
+        /// </summary>
+        private List<Predmet> PrikaziPoGodStudijaPolja(string godinaStudija)
+        {
+            return konekcijaNaBazu.Predmeti.Where(predmet =>predmet.GodinaStudija.Contains(godinaStudija)).ToList();
         }
 
 
 
 
         //Checks if selected value in combo boxes is valid, if not mbox appears
-
         private bool ProvjeriValidnostBoxova()
         {
             if (Validator.ValidirajPolje(cmbBrojPolja, err, "Vrijednost nije validna!") && Validator.ValidirajPolje(cmbGodinaStudija, err, "Vrijednost nije validna"))
@@ -107,6 +146,8 @@ namespace SchoolApp.ChildForms
 
 
 
+
+
         //uses selected search parameters and search valid students within database
         private void btnTrazi_Click(object sender, EventArgs e)
         {
@@ -116,6 +157,74 @@ namespace SchoolApp.ChildForms
                 return;
             }
             MessageBox.Show($"Please choose the correct search parameters!");
+        }
+
+
+
+
+
+
+        /// <summary>
+        /// Moves to next and previous row in data grid view
+        /// </summary>
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int rowIndex = dgvPredmeti.SelectedRows[0].Index;
+                int zadnjiIndeks = PrebrojVidljive() -1;
+                if (rowIndex == zadnjiIndeks && dgvPredmeti.Rows.Count == 1)
+                    return;
+                dgvPredmeti.Rows[rowIndex].Selected = false;
+                if (rowIndex <= zadnjiIndeks)
+                {
+                    if(++rowIndex>zadnjiIndeks)
+                    {
+                        rowIndex = 0;
+                        dgvPredmeti.Rows[rowIndex].Selected = true;
+                        return;
+                    }else
+                        dgvPredmeti.Rows[rowIndex].Selected = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}");
+            }
+        }
+
+        private int PrebrojVidljive()
+        {
+            int brojac = 0;
+            for (int i = 0; i < dgvPredmeti.Rows.Count; i++)
+                if(dgvPredmeti.Rows[i].Visible)
+                    brojac++;
+            return brojac;
+        }
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int rowIndex = dgvPredmeti.SelectedRows[0].Index;
+                int zadnjiIndeks = dgvPredmeti.RowCount - 1;
+                if (rowIndex >= 0)
+                {
+                    dgvPredmeti.Rows[rowIndex].Selected = false;
+                    if (rowIndex-- == 0)
+                    {
+                        rowIndex = zadnjiIndeks;
+                        dgvPredmeti.Rows[rowIndex].Selected = true;
+                        return;
+                    }
+                    else
+                        dgvPredmeti.Rows[rowIndex].Selected = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}");
+            }
         }
     }
 }
