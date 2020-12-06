@@ -93,7 +93,7 @@ namespace SchoolApp.ChildForms
 
 
 
-
+        //Checks if selected value in combo boxes is valid, if not mbox appears
 
         private bool ProvjeriValidnostBoxova()
         {
@@ -105,6 +105,9 @@ namespace SchoolApp.ChildForms
             return false;
         }
 
+
+
+        //uses selected search parameters and search valid students within database
         private void btnTrazi_Click(object sender, EventArgs e)
         {
             if(ProvjeriValidnostBoxova())
