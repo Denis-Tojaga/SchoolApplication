@@ -224,7 +224,7 @@
             this.txtDatumZaposlenja.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDatumZaposlenja.Font = new System.Drawing.Font("Comic Sans MS", 11.25F);
             this.txtDatumZaposlenja.ForeColor = System.Drawing.Color.Black;
-            this.txtDatumZaposlenja.Location = new System.Drawing.Point(35, 323);
+            this.txtDatumZaposlenja.Location = new System.Drawing.Point(35, 320);
             this.txtDatumZaposlenja.Name = "txtDatumZaposlenja";
             this.txtDatumZaposlenja.Size = new System.Drawing.Size(220, 28);
             this.txtDatumZaposlenja.TabIndex = 3;
@@ -234,7 +234,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(100, 301);
+            this.label14.Location = new System.Drawing.Point(100, 298);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(89, 19);
             this.label14.TabIndex = 2;

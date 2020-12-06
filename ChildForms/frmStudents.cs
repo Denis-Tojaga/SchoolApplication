@@ -188,21 +188,42 @@ namespace SchoolApp.ChildForms
         /// </summary>
         private void PretragaPoGodiniStudija()
         {
-            var rezultat = konekcijaNaBazu.Studenti.Where(student => student.GodinaStudija.Contains(txtFilter.Text));
-            dgvStudents.DataSource = null;
-            dgvStudents.DataSource = rezultat.ToList();
+            try
+            {
+                var rezultat = konekcijaNaBazu.Studenti.Where(student => student.GodinaStudija.Contains(txtFilter.Text));
+                dgvStudents.DataSource = null;
+                dgvStudents.DataSource = rezultat.ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message} {ex.InnerException?.Message}");
+            }
         }
         private void PretragaPoImenu()
         {
-            var rezultat = konekcijaNaBazu.Studenti.Where(student => student.Ime==txtFilter.Text);
-            dgvStudents.DataSource = null;
-            dgvStudents.DataSource = rezultat.ToList();
+            try
+            {
+                var rezultat = konekcijaNaBazu.Studenti.Where(student => student.Ime == txtFilter.Text);
+                dgvStudents.DataSource = null;
+                dgvStudents.DataSource = rezultat.ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message} {ex.InnerException?.Message}");
+            }
         }
         private void PretragaPoIndeksu()
         {
-            var rezultat = konekcijaNaBazu.Studenti.Where(student => student.BrojIndeksa.Contains(txtFilter.Text.ToUpper()));
-            dgvStudents.DataSource = null;
-            dgvStudents.DataSource = rezultat.ToList();
+            try
+            {
+                var rezultat = konekcijaNaBazu.Studenti.Where(student => student.BrojIndeksa.Contains(txtFilter.Text.ToUpper()));
+                dgvStudents.DataSource = null;
+                dgvStudents.DataSource = rezultat.ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message} {ex.InnerException?.Message}");
+            }
         }
 
 
