@@ -19,6 +19,7 @@ namespace SchoolApp.ChildForms
         bool ValidniBoxovi = false;
 
 
+        //Loads all data to combo boxes
         public frmSubjects()
         {
             InitializeComponent();
@@ -64,6 +65,8 @@ namespace SchoolApp.ChildForms
         }
 
 
+
+        //Gets the data from database and selected values in combo boxes, so it does search by default
         private void LoadData()
         {
             try
@@ -86,6 +89,11 @@ namespace SchoolApp.ChildForms
         {
             return konekcijaNaBazu.Predmeti.Where(predmet => predmet.PredmetID <= brojPolja && predmet.GodinaStudija.Contains(godinaStudija)).ToList();
         }
+
+
+
+
+
 
         private bool ProvjeriValidnostBoxova()
         {
