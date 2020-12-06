@@ -43,3 +43,4 @@ C:\Users\Denis\Documents\GitHub\SchoolApplication\bin\Debug\schoolDatabase.db
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.StudentManagementForms.frmAddStudent.resources
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.StudentManagementForms.frmShowDetails.resources
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.ChildForms.frmSubjects.resources
+C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.SubjectManagementForms.frmAddSubject.resources

@@ -122,6 +122,12 @@
     <Compile Include="StudentManagementForms\frmShowDetails.Designer.cs">
       <DependentUpon>frmShowDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubjectManagementForms\frmAddSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectManagementForms\frmAddSubject.Designer.cs">
+      <DependentUpon>frmAddSubject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Validator.cs" />
     <EmbeddedResource Include="ChildForms\frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentManagementForms\frmShowDetails.resx">
       <DependentUpon>frmShowDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectManagementForms\frmAddSubject.resx">
+      <DependentUpon>frmAddSubject.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

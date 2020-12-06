@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolApp.SubjectManagementForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -173,8 +174,12 @@ namespace SchoolApp.ChildForms
             {
                 int rowIndex = dgvPredmeti.SelectedRows[0].Index;
                 int zadnjiIndeks = PrebrojVidljive() -1;
+
+                //Ako je red isto kao zadnji indeks i broj redova koji je baza vratila je 1 onda se prekida jer nema gdje ici 
                 if (rowIndex == zadnjiIndeks && dgvPredmeti.Rows.Count == 1)
                     return;
+
+
                 dgvPredmeti.Rows[rowIndex].Selected = false;
                 if (rowIndex <= zadnjiIndeks)
                 {
@@ -192,22 +197,15 @@ namespace SchoolApp.ChildForms
                 MessageBox.Show($"{ex.Message}");
             }
         }
-
-        private int PrebrojVidljive()
-        {
-            int brojac = 0;
-            for (int i = 0; i < dgvPredmeti.Rows.Count; i++)
-                if(dgvPredmeti.Rows[i].Visible)
-                    brojac++;
-            return brojac;
-        }
-
         private void btnPrevious_Click(object sender, EventArgs e)
         {
             try
             {
                 int rowIndex = dgvPredmeti.SelectedRows[0].Index;
                 int zadnjiIndeks = dgvPredmeti.RowCount - 1;
+
+
+
                 if (rowIndex >= 0)
                 {
                     dgvPredmeti.Rows[rowIndex].Selected = false;
@@ -225,6 +223,29 @@ namespace SchoolApp.ChildForms
             {
                 MessageBox.Show($"{ex.Message}");
             }
+        }
+
+
+
+
+
+
+
+        //Counts all visible rows
+        private int PrebrojVidljive()
+        {
+            int brojac = 0;
+            for (int i = 0; i < dgvPredmeti.Rows.Count; i++)
+                if(dgvPredmeti.Rows[i].Visible)
+                    brojac++;
+            return brojac;
+        }
+
+        private void btnAddSubject_Click(object sender, EventArgs e)
+        {
+            frmAddSubject frmPredmetAdd = new frmAddSubject();
+            if(frmPredmetAdd.ShowDialog() == DialogResult.OK)
+                LoadData();
         }
     }
 }

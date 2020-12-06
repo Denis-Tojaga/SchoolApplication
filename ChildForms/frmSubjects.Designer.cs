@@ -29,13 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbBrojPolja = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,7 +47,6 @@
             this.btnNext = new System.Windows.Forms.Button();
             this.lblShowingEntries = new System.Windows.Forms.Label();
             this.err = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnTrazi = new System.Windows.Forms.Button();
             this.SubjectCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Subjectname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tutor = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,9 +54,11 @@
             this.Lessons = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PracticeHours = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnExam = new System.Windows.Forms.DataGridViewButtonColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnTrazi = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPredmeti)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.err)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -76,22 +76,11 @@
             this.label1.Text = "Subjects List";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(115)))), ((int)(((byte)(172)))));
-            this.pictureBox1.Image = global::SchoolApp.Properties.Resources.knijge;
-            this.pictureBox1.Location = new System.Drawing.Point(52, 54);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 28);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 147);
+            this.label3.Location = new System.Drawing.Point(24, 129);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 27);
             this.label3.TabIndex = 4;
@@ -103,7 +92,7 @@
             this.cmbBrojPolja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbBrojPolja.Font = new System.Drawing.Font("Comic Sans MS", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbBrojPolja.FormattingEnabled = true;
-            this.cmbBrojPolja.Location = new System.Drawing.Point(90, 146);
+            this.cmbBrojPolja.Location = new System.Drawing.Point(89, 128);
             this.cmbBrojPolja.Name = "cmbBrojPolja";
             this.cmbBrojPolja.Size = new System.Drawing.Size(47, 34);
             this.cmbBrojPolja.TabIndex = 5;
@@ -112,7 +101,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(141, 148);
+            this.label4.Location = new System.Drawing.Point(140, 130);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 27);
             this.label4.TabIndex = 6;
@@ -124,7 +113,7 @@
             this.cmbGodinaStudija.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbGodinaStudija.Font = new System.Drawing.Font("Comic Sans MS", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbGodinaStudija.FormattingEnabled = true;
-            this.cmbGodinaStudija.Location = new System.Drawing.Point(445, 148);
+            this.cmbGodinaStudija.Location = new System.Drawing.Point(444, 130);
             this.cmbGodinaStudija.Name = "cmbGodinaStudija";
             this.cmbGodinaStudija.Size = new System.Drawing.Size(218, 34);
             this.cmbGodinaStudija.TabIndex = 8;
@@ -133,7 +122,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(332, 150);
+            this.label6.Location = new System.Drawing.Point(331, 132);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(115, 27);
             this.label6.TabIndex = 7;
@@ -143,14 +132,15 @@
             // 
             this.btnAddSubject.BackColor = System.Drawing.Color.Gainsboro;
             this.btnAddSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddSubject.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddSubject.Font = new System.Drawing.Font("Comic Sans MS", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddSubject.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnAddSubject.Location = new System.Drawing.Point(793, 90);
+            this.btnAddSubject.Location = new System.Drawing.Point(769, 128);
             this.btnAddSubject.Name = "btnAddSubject";
-            this.btnAddSubject.Size = new System.Drawing.Size(135, 32);
+            this.btnAddSubject.Size = new System.Drawing.Size(159, 36);
             this.btnAddSubject.TabIndex = 9;
             this.btnAddSubject.Text = "+ Add Subject";
             this.btnAddSubject.UseVisualStyleBackColor = false;
+            this.btnAddSubject.Click += new System.EventHandler(this.btnAddSubject_Click);
             // 
             // dgvPredmeti
             // 
@@ -160,14 +150,14 @@
             this.dgvPredmeti.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvPredmeti.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.dgvPredmeti.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPredmeti.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPredmeti.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPredmeti.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPredmeti.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.SubjectCode,
@@ -178,32 +168,34 @@
             this.PracticeHours,
             this.btnExam});
             this.dgvPredmeti.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPredmeti.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPredmeti.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPredmeti.GridColor = System.Drawing.Color.White;
-            this.dgvPredmeti.Location = new System.Drawing.Point(7, 208);
+            this.dgvPredmeti.Location = new System.Drawing.Point(7, 187);
             this.dgvPredmeti.Name = "dgvPredmeti";
             this.dgvPredmeti.ReadOnly = true;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPredmeti.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPredmeti.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvPredmeti.RowHeadersWidth = 10;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvPredmeti.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvPredmeti.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvPredmeti.RowTemplate.Height = 28;
+            this.dgvPredmeti.RowTemplate.ReadOnly = true;
             this.dgvPredmeti.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPredmeti.Size = new System.Drawing.Size(934, 295);
+            this.dgvPredmeti.Size = new System.Drawing.Size(934, 316);
             this.dgvPredmeti.TabIndex = 10;
             // 
             // lblDataCount
@@ -259,20 +251,6 @@
             // 
             this.err.ContainerControl = this;
             // 
-            // btnTrazi
-            // 
-            this.btnTrazi.BackColor = System.Drawing.Color.Transparent;
-            this.btnTrazi.BackgroundImage = global::SchoolApp.Properties.Resources.lupa3;
-            this.btnTrazi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTrazi.FlatAppearance.BorderSize = 0;
-            this.btnTrazi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTrazi.Location = new System.Drawing.Point(681, 148);
-            this.btnTrazi.Name = "btnTrazi";
-            this.btnTrazi.Size = new System.Drawing.Size(38, 32);
-            this.btnTrazi.TabIndex = 15;
-            this.btnTrazi.UseVisualStyleBackColor = false;
-            this.btnTrazi.Click += new System.EventHandler(this.btnTrazi_Click);
-            // 
             // SubjectCode
             // 
             this.SubjectCode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -324,18 +302,43 @@
             // btnExam
             // 
             this.btnExam.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(115)))), ((int)(((byte)(172)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(115)))), ((int)(((byte)(172)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Gainsboro;
-            this.btnExam.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(115)))), ((int)(((byte)(172)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(115)))), ((int)(((byte)(172)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            this.btnExam.DefaultCellStyle = dataGridViewCellStyle2;
             this.btnExam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExam.HeaderText = "Exam Action";
             this.btnExam.Name = "btnExam";
             this.btnExam.ReadOnly = true;
             this.btnExam.Text = "Add Exam";
+            // 
+            // btnTrazi
+            // 
+            this.btnTrazi.BackColor = System.Drawing.Color.Transparent;
+            this.btnTrazi.BackgroundImage = global::SchoolApp.Properties.Resources.lupa3;
+            this.btnTrazi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTrazi.FlatAppearance.BorderSize = 0;
+            this.btnTrazi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrazi.Location = new System.Drawing.Point(680, 130);
+            this.btnTrazi.Name = "btnTrazi";
+            this.btnTrazi.Size = new System.Drawing.Size(38, 32);
+            this.btnTrazi.TabIndex = 15;
+            this.btnTrazi.UseVisualStyleBackColor = false;
+            this.btnTrazi.Click += new System.EventHandler(this.btnTrazi_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(115)))), ((int)(((byte)(172)))));
+            this.pictureBox1.Image = global::SchoolApp.Properties.Resources.knijge;
+            this.pictureBox1.Location = new System.Drawing.Point(52, 54);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(46, 28);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // frmSubjects
             // 
@@ -361,9 +364,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Subjects";
             this.Load += new System.EventHandler(this.frmSubjects_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPredmeti)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.err)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
