@@ -30,6 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbPracticeHours = new System.Windows.Forms.ComboBox();
+            this.cmbLessonHours = new System.Windows.Forms.ComboBox();
+            this.cmbYearOfStudy = new System.Windows.Forms.ComboBox();
+            this.btnClose = new System.Windows.Forms.Button();
             this.btnAddSubject = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -55,11 +59,7 @@
             this.pbSyllabusPic = new System.Windows.Forms.PictureBox();
             this.btnImportSyllabus = new System.Windows.Forms.Button();
             this.ofdOdabirSlike = new System.Windows.Forms.OpenFileDialog();
-            this.btnClose = new System.Windows.Forms.Button();
             this.err = new System.Windows.Forms.ErrorProvider(this.components);
-            this.cmbYearOfStudy = new System.Windows.Forms.ComboBox();
-            this.cmbLessonHours = new System.Windows.Forms.ComboBox();
-            this.cmbPracticeHours = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSyllabusPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.err)).BeginInit();
@@ -99,6 +99,70 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(566, 462);
             this.panel1.TabIndex = 5;
+            // 
+            // cmbPracticeHours
+            // 
+            this.cmbPracticeHours.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.cmbPracticeHours.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPracticeHours.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.cmbPracticeHours.FormattingEnabled = true;
+            this.cmbPracticeHours.Items.AddRange(new object[] {
+            "15",
+            "20",
+            "25",
+            "30",
+            "35"});
+            this.cmbPracticeHours.Location = new System.Drawing.Point(341, 225);
+            this.cmbPracticeHours.Name = "cmbPracticeHours";
+            this.cmbPracticeHours.Size = new System.Drawing.Size(189, 24);
+            this.cmbPracticeHours.TabIndex = 38;
+            // 
+            // cmbLessonHours
+            // 
+            this.cmbLessonHours.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.cmbLessonHours.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbLessonHours.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.cmbLessonHours.FormattingEnabled = true;
+            this.cmbLessonHours.Items.AddRange(new object[] {
+            "20",
+            "30",
+            "40",
+            "50"});
+            this.cmbLessonHours.Location = new System.Drawing.Point(59, 226);
+            this.cmbLessonHours.Name = "cmbLessonHours";
+            this.cmbLessonHours.Size = new System.Drawing.Size(189, 24);
+            this.cmbLessonHours.TabIndex = 37;
+            // 
+            // cmbYearOfStudy
+            // 
+            this.cmbYearOfStudy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.cmbYearOfStudy.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbYearOfStudy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.cmbYearOfStudy.FormattingEnabled = true;
+            this.cmbYearOfStudy.Items.AddRange(new object[] {
+            "Prva godina",
+            "Druga godina",
+            "Treca godina",
+            "Cetvrta godina",
+            "Master"});
+            this.cmbYearOfStudy.Location = new System.Drawing.Point(60, 151);
+            this.cmbYearOfStudy.Name = "cmbYearOfStudy";
+            this.cmbYearOfStudy.Size = new System.Drawing.Size(189, 24);
+            this.cmbYearOfStudy.TabIndex = 36;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnClose.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.Black;
+            this.btnClose.Location = new System.Drawing.Point(523, 9);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(31, 32);
+            this.btnClose.TabIndex = 35;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnAddSubject
             // 
@@ -344,6 +408,7 @@
             // btnImportSyllabus
             // 
             this.btnImportSyllabus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.btnImportSyllabus.FlatAppearance.BorderSize = 2;
             this.btnImportSyllabus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImportSyllabus.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImportSyllabus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
@@ -359,74 +424,10 @@
             // 
             this.ofdOdabirSlike.FileName = "openFileDialog1";
             // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClose.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.Black;
-            this.btnClose.Location = new System.Drawing.Point(523, 9);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(31, 32);
-            this.btnClose.TabIndex = 35;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // err
             // 
             this.err.BlinkRate = 150;
             this.err.ContainerControl = this;
-            // 
-            // cmbYearOfStudy
-            // 
-            this.cmbYearOfStudy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
-            this.cmbYearOfStudy.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbYearOfStudy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.cmbYearOfStudy.FormattingEnabled = true;
-            this.cmbYearOfStudy.Items.AddRange(new object[] {
-            "Prva godina",
-            "Druga godina",
-            "Treca godina",
-            "Cetvrta godina",
-            "Master"});
-            this.cmbYearOfStudy.Location = new System.Drawing.Point(60, 151);
-            this.cmbYearOfStudy.Name = "cmbYearOfStudy";
-            this.cmbYearOfStudy.Size = new System.Drawing.Size(189, 24);
-            this.cmbYearOfStudy.TabIndex = 36;
-            // 
-            // cmbLessonHours
-            // 
-            this.cmbLessonHours.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
-            this.cmbLessonHours.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbLessonHours.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.cmbLessonHours.FormattingEnabled = true;
-            this.cmbLessonHours.Items.AddRange(new object[] {
-            "20",
-            "30",
-            "40",
-            "50"});
-            this.cmbLessonHours.Location = new System.Drawing.Point(59, 226);
-            this.cmbLessonHours.Name = "cmbLessonHours";
-            this.cmbLessonHours.Size = new System.Drawing.Size(189, 24);
-            this.cmbLessonHours.TabIndex = 37;
-            // 
-            // cmbPracticeHours
-            // 
-            this.cmbPracticeHours.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
-            this.cmbPracticeHours.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbPracticeHours.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.cmbPracticeHours.FormattingEnabled = true;
-            this.cmbPracticeHours.Items.AddRange(new object[] {
-            "15",
-            "20",
-            "25",
-            "30",
-            "35"});
-            this.cmbPracticeHours.Location = new System.Drawing.Point(341, 225);
-            this.cmbPracticeHours.Name = "cmbPracticeHours";
-            this.cmbPracticeHours.Size = new System.Drawing.Size(189, 24);
-            this.cmbPracticeHours.TabIndex = 38;
             // 
             // frmAddSubject
             // 

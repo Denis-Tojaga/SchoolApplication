@@ -71,7 +71,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label1.Location = new System.Drawing.Point(97, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 23);
@@ -123,7 +123,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label4.Location = new System.Drawing.Point(161, 83);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 23);
@@ -144,7 +144,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label6.Location = new System.Drawing.Point(71, 157);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(144, 23);
@@ -176,7 +176,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label8.Location = new System.Drawing.Point(135, 120);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 23);
@@ -207,7 +207,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label10.Location = new System.Drawing.Point(133, 194);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(80, 23);
@@ -239,7 +239,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label12.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label12.Location = new System.Drawing.Point(156, 232);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(56, 23);
@@ -260,7 +260,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label14.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label14.Location = new System.Drawing.Point(145, 271);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(67, 23);
@@ -272,7 +272,7 @@
             this.label15.BackColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(219, 331);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(161, 2);
+            this.label15.Size = new System.Drawing.Size(159, 2);
             this.label15.TabIndex = 23;
             this.label15.Text = "label15";
             // 
@@ -281,7 +281,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label16.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label16.Location = new System.Drawing.Point(84, 310);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(128, 23);
@@ -302,7 +302,7 @@
             // 
             // btnOdaberiSliku
             // 
-            this.btnOdaberiSliku.BackColor = System.Drawing.Color.Black;
+            this.btnOdaberiSliku.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.btnOdaberiSliku.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOdaberiSliku.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOdaberiSliku.ForeColor = System.Drawing.Color.White;
@@ -319,7 +319,7 @@
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label18.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Black;
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label18.Location = new System.Drawing.Point(161, 351);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(49, 23);
@@ -354,7 +354,7 @@
             // 
             // btnSaveStudent
             // 
-            this.btnSaveStudent.BackColor = System.Drawing.Color.Black;
+            this.btnSaveStudent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.btnSaveStudent.FlatAppearance.BorderSize = 2;
             this.btnSaveStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveStudent.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -414,8 +414,8 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.button1.FlatAppearance.BorderSize = 3;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;

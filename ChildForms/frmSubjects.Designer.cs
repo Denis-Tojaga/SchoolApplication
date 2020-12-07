@@ -42,11 +42,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnAddSubject = new System.Windows.Forms.Button();
             this.dgvPredmeti = new System.Windows.Forms.DataGridView();
-            this.lblDataCount = new System.Windows.Forms.Label();
-            this.btnPrevious = new System.Windows.Forms.Button();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.lblShowingEntries = new System.Windows.Forms.Label();
-            this.err = new System.Windows.Forms.ErrorProvider(this.components);
             this.SubjectCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Subjectname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tutor = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +49,11 @@
             this.Lessons = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PracticeHours = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnExam = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.lblDataCount = new System.Windows.Forms.Label();
+            this.btnPrevious = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.lblShowingEntries = new System.Windows.Forms.Label();
+            this.err = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnTrazi = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPredmeti)).BeginInit();
@@ -64,7 +64,7 @@
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(115)))), ((int)(((byte)(172)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
@@ -80,6 +80,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label3.Location = new System.Drawing.Point(24, 129);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 27);
@@ -91,16 +92,18 @@
             this.cmbBrojPolja.BackColor = System.Drawing.Color.White;
             this.cmbBrojPolja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbBrojPolja.Font = new System.Drawing.Font("Comic Sans MS", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbBrojPolja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.cmbBrojPolja.FormattingEnabled = true;
             this.cmbBrojPolja.Location = new System.Drawing.Point(89, 128);
             this.cmbBrojPolja.Name = "cmbBrojPolja";
             this.cmbBrojPolja.Size = new System.Drawing.Size(47, 34);
-            this.cmbBrojPolja.TabIndex = 5;
+            this.cmbBrojPolja.TabIndex = 0;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label4.Location = new System.Drawing.Point(140, 130);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 27);
@@ -112,16 +115,18 @@
             this.cmbGodinaStudija.BackColor = System.Drawing.Color.White;
             this.cmbGodinaStudija.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbGodinaStudija.Font = new System.Drawing.Font("Comic Sans MS", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbGodinaStudija.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.cmbGodinaStudija.FormattingEnabled = true;
             this.cmbGodinaStudija.Location = new System.Drawing.Point(444, 130);
             this.cmbGodinaStudija.Name = "cmbGodinaStudija";
             this.cmbGodinaStudija.Size = new System.Drawing.Size(218, 34);
-            this.cmbGodinaStudija.TabIndex = 8;
+            this.cmbGodinaStudija.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label6.Location = new System.Drawing.Point(331, 132);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(115, 27);
@@ -130,14 +135,14 @@
             // 
             // btnAddSubject
             // 
-            this.btnAddSubject.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddSubject.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.btnAddSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddSubject.Font = new System.Drawing.Font("Comic Sans MS", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddSubject.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnAddSubject.ForeColor = System.Drawing.Color.White;
             this.btnAddSubject.Location = new System.Drawing.Point(769, 128);
             this.btnAddSubject.Name = "btnAddSubject";
             this.btnAddSubject.Size = new System.Drawing.Size(159, 36);
-            this.btnAddSubject.TabIndex = 9;
+            this.btnAddSubject.TabIndex = 3;
             this.btnAddSubject.Text = "+ Add Subject";
             this.btnAddSubject.UseVisualStyleBackColor = false;
             this.btnAddSubject.Click += new System.EventHandler(this.btnAddSubject_Click);
@@ -153,8 +158,8 @@
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvPredmeti.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -171,8 +176,8 @@
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvPredmeti.DefaultCellStyle = dataGridViewCellStyle3;
@@ -183,73 +188,23 @@
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvPredmeti.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvPredmeti.RowHeadersWidth = 10;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.dgvPredmeti.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvPredmeti.RowTemplate.Height = 28;
+            this.dgvPredmeti.RowTemplate.Height = 30;
             this.dgvPredmeti.RowTemplate.ReadOnly = true;
+            this.dgvPredmeti.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvPredmeti.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPredmeti.Size = new System.Drawing.Size(934, 316);
             this.dgvPredmeti.TabIndex = 10;
-            // 
-            // lblDataCount
-            // 
-            this.lblDataCount.AutoSize = true;
-            this.lblDataCount.BackColor = System.Drawing.Color.White;
-            this.lblDataCount.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataCount.Location = new System.Drawing.Point(676, 464);
-            this.lblDataCount.Name = "lblDataCount";
-            this.lblDataCount.Size = new System.Drawing.Size(252, 27);
-            this.lblDataCount.TabIndex = 11;
-            this.lblDataCount.Text = "No data available in table";
-            // 
-            // btnPrevious
-            // 
-            this.btnPrevious.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrevious.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevious.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnPrevious.Location = new System.Drawing.Point(804, 505);
-            this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(73, 32);
-            this.btnPrevious.TabIndex = 12;
-            this.btnPrevious.Text = "Previous";
-            this.btnPrevious.UseVisualStyleBackColor = false;
-            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
-            // 
-            // btnNext
-            // 
-            this.btnNext.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNext.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnNext.Location = new System.Drawing.Point(878, 505);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(63, 32);
-            this.btnNext.TabIndex = 13;
-            this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = false;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // lblShowingEntries
-            // 
-            this.lblShowingEntries.AutoSize = true;
-            this.lblShowingEntries.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShowingEntries.Location = new System.Drawing.Point(30, 514);
-            this.lblShowingEntries.Name = "lblShowingEntries";
-            this.lblShowingEntries.Size = new System.Drawing.Size(123, 19);
-            this.lblShowingEntries.TabIndex = 14;
-            this.lblShowingEntries.Text = "Showing 0 entries";
-            // 
-            // err
-            // 
-            this.err.ContainerControl = this;
             // 
             // SubjectCode
             // 
@@ -315,6 +270,59 @@
             this.btnExam.ReadOnly = true;
             this.btnExam.Text = "Add Exam";
             // 
+            // lblDataCount
+            // 
+            this.lblDataCount.AutoSize = true;
+            this.lblDataCount.BackColor = System.Drawing.Color.White;
+            this.lblDataCount.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataCount.Location = new System.Drawing.Point(676, 464);
+            this.lblDataCount.Name = "lblDataCount";
+            this.lblDataCount.Size = new System.Drawing.Size(252, 27);
+            this.lblDataCount.TabIndex = 11;
+            this.lblDataCount.Text = "No data available in table";
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.btnPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrevious.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevious.ForeColor = System.Drawing.Color.White;
+            this.btnPrevious.Location = new System.Drawing.Point(804, 505);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.Size = new System.Drawing.Size(73, 32);
+            this.btnPrevious.TabIndex = 4;
+            this.btnPrevious.Text = "Previous";
+            this.btnPrevious.UseVisualStyleBackColor = false;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.ForeColor = System.Drawing.Color.White;
+            this.btnNext.Location = new System.Drawing.Point(878, 505);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(63, 32);
+            this.btnNext.TabIndex = 5;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // lblShowingEntries
+            // 
+            this.lblShowingEntries.AutoSize = true;
+            this.lblShowingEntries.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShowingEntries.Location = new System.Drawing.Point(30, 514);
+            this.lblShowingEntries.Name = "lblShowingEntries";
+            this.lblShowingEntries.Size = new System.Drawing.Size(123, 19);
+            this.lblShowingEntries.TabIndex = 14;
+            this.lblShowingEntries.Text = "Showing 0 entries";
+            // 
+            // err
+            // 
+            this.err.ContainerControl = this;
+            // 
             // btnTrazi
             // 
             this.btnTrazi.BackColor = System.Drawing.Color.Transparent;
@@ -325,13 +333,13 @@
             this.btnTrazi.Location = new System.Drawing.Point(680, 130);
             this.btnTrazi.Name = "btnTrazi";
             this.btnTrazi.Size = new System.Drawing.Size(38, 32);
-            this.btnTrazi.TabIndex = 15;
+            this.btnTrazi.TabIndex = 2;
             this.btnTrazi.UseVisualStyleBackColor = false;
             this.btnTrazi.Click += new System.EventHandler(this.btnTrazi_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(115)))), ((int)(((byte)(172)))));
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.pictureBox1.Image = global::SchoolApp.Properties.Resources.knijge;
             this.pictureBox1.Location = new System.Drawing.Point(52, 54);
             this.pictureBox1.Name = "pictureBox1";

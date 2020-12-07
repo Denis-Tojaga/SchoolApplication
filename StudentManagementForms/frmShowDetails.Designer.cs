@@ -76,7 +76,7 @@
             // pbSlikaStudenta
             // 
             this.pbSlikaStudenta.BackColor = System.Drawing.Color.Gray;
-            this.pbSlikaStudenta.Location = new System.Drawing.Point(34, 69);
+            this.pbSlikaStudenta.Location = new System.Drawing.Point(38, 69);
             this.pbSlikaStudenta.Name = "pbSlikaStudenta";
             this.pbSlikaStudenta.Size = new System.Drawing.Size(225, 254);
             this.pbSlikaStudenta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -87,7 +87,7 @@
             // 
             this.lblStudentHeader.BackColor = System.Drawing.Color.Transparent;
             this.lblStudentHeader.Font = new System.Drawing.Font("Gill Sans MT", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudentHeader.Location = new System.Drawing.Point(23, 14);
+            this.lblStudentHeader.Location = new System.Drawing.Point(29, 26);
             this.lblStudentHeader.Name = "lblStudentHeader";
             this.lblStudentHeader.Size = new System.Drawing.Size(247, 40);
             this.lblStudentHeader.TabIndex = 3;
@@ -96,7 +96,7 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label2.Location = new System.Drawing.Point(522, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 3);
@@ -116,7 +116,8 @@
             // 
             // label5
             // 
-            this.label5.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label5.Location = new System.Drawing.Point(394, 181);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(132, 3);
@@ -128,6 +129,7 @@
             this.lblIme.AutoSize = true;
             this.lblIme.BackColor = System.Drawing.Color.Transparent;
             this.lblIme.Font = new System.Drawing.Font("Gill Sans MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIme.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.lblIme.Location = new System.Drawing.Point(403, 156);
             this.lblIme.Name = "lblIme";
             this.lblIme.Size = new System.Drawing.Size(116, 23);
@@ -140,6 +142,7 @@
             this.lblPrezime.AutoSize = true;
             this.lblPrezime.BackColor = System.Drawing.Color.Transparent;
             this.lblPrezime.Font = new System.Drawing.Font("Gill Sans MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrezime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.lblPrezime.Location = new System.Drawing.Point(403, 199);
             this.lblPrezime.Name = "lblPrezime";
             this.lblPrezime.Size = new System.Drawing.Size(116, 23);
@@ -149,7 +152,8 @@
             // 
             // label8
             // 
-            this.label8.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label8.Location = new System.Drawing.Point(394, 224);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(132, 3);
@@ -172,6 +176,7 @@
             this.lblImeOca.AutoSize = true;
             this.lblImeOca.BackColor = System.Drawing.Color.Transparent;
             this.lblImeOca.Font = new System.Drawing.Font("Gill Sans MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImeOca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.lblImeOca.Location = new System.Drawing.Point(403, 249);
             this.lblImeOca.Name = "lblImeOca";
             this.lblImeOca.Size = new System.Drawing.Size(116, 23);
@@ -180,7 +185,8 @@
             // 
             // label11
             // 
-            this.label11.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label11.Location = new System.Drawing.Point(394, 274);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(132, 3);
@@ -212,7 +218,7 @@
             // 
             // label14
             // 
-            this.label14.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label14.Location = new System.Drawing.Point(692, 141);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(132, 3);
@@ -235,6 +241,7 @@
             this.lblBrojIndeksa.AutoSize = true;
             this.lblBrojIndeksa.BackColor = System.Drawing.Color.Transparent;
             this.lblBrojIndeksa.Font = new System.Drawing.Font("Gill Sans MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBrojIndeksa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.lblBrojIndeksa.Location = new System.Drawing.Point(403, 116);
             this.lblBrojIndeksa.Name = "lblBrojIndeksa";
             this.lblBrojIndeksa.Size = new System.Drawing.Size(116, 23);
@@ -244,7 +251,8 @@
             // 
             // label17
             // 
-            this.label17.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label17.Location = new System.Drawing.Point(394, 141);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(132, 3);
@@ -276,7 +284,7 @@
             // 
             // label20
             // 
-            this.label20.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label20.Location = new System.Drawing.Point(692, 185);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(132, 3);
@@ -299,6 +307,7 @@
             this.lblGodinaStudija.AutoSize = true;
             this.lblGodinaStudija.BackColor = System.Drawing.Color.Transparent;
             this.lblGodinaStudija.Font = new System.Drawing.Font("Gill Sans MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGodinaStudija.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.lblGodinaStudija.Location = new System.Drawing.Point(403, 295);
             this.lblGodinaStudija.Name = "lblGodinaStudija";
             this.lblGodinaStudija.Size = new System.Drawing.Size(116, 23);
@@ -307,7 +316,8 @@
             // 
             // label23
             // 
-            this.label23.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label23.Location = new System.Drawing.Point(394, 320);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(132, 3);
@@ -339,7 +349,7 @@
             // 
             // label26
             // 
-            this.label26.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label26.Location = new System.Drawing.Point(692, 280);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(76, 3);
@@ -369,7 +379,7 @@
             // 
             // label29
             // 
-            this.label29.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label29.Location = new System.Drawing.Point(692, 231);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(132, 3);

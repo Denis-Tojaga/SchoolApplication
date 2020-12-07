@@ -92,7 +92,7 @@
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(115)))), ((int)(((byte)(172)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -160,6 +160,7 @@
             // 
             this.label15.BackColor = System.Drawing.Color.White;
             this.label15.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label15.Location = new System.Drawing.Point(638, 21);
             this.label15.Name = "label15";
@@ -169,7 +170,7 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(115)))), ((int)(((byte)(172)))));
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.btnEdit.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.Location = new System.Drawing.Point(606, 410);
@@ -182,7 +183,7 @@
             // 
             // btnSaveChanges
             // 
-            this.btnSaveChanges.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(115)))), ((int)(((byte)(172)))));
+            this.btnSaveChanges.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.btnSaveChanges.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveChanges.ForeColor = System.Drawing.Color.White;
             this.btnSaveChanges.Location = new System.Drawing.Point(758, 410);
@@ -207,7 +208,7 @@
             // 
             // btnChoosePhoto
             // 
-            this.btnChoosePhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(115)))), ((int)(((byte)(172)))));
+            this.btnChoosePhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.btnChoosePhoto.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChoosePhoto.ForeColor = System.Drawing.Color.White;
             this.btnChoosePhoto.Location = new System.Drawing.Point(35, 254);
@@ -234,6 +235,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label14.Location = new System.Drawing.Point(100, 298);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(89, 19);
@@ -266,6 +268,7 @@
             // 
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label2.Location = new System.Drawing.Point(39, 18);
             this.label2.Name = "label2";
@@ -320,7 +323,7 @@
             // 
             this.lblZ10.AutoSize = true;
             this.lblZ10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZ10.ForeColor = System.Drawing.Color.Red;
+            this.lblZ10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.lblZ10.Location = new System.Drawing.Point(132, 308);
             this.lblZ10.Name = "lblZ10";
             this.lblZ10.Size = new System.Drawing.Size(15, 20);
@@ -331,7 +334,7 @@
             // 
             this.lblZ8.AutoSize = true;
             this.lblZ8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZ8.ForeColor = System.Drawing.Color.Red;
+            this.lblZ8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.lblZ8.Location = new System.Drawing.Point(116, 243);
             this.lblZ8.Name = "lblZ8";
             this.lblZ8.Size = new System.Drawing.Size(15, 20);
@@ -342,7 +345,7 @@
             // 
             this.lblZ9.AutoSize = true;
             this.lblZ9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZ9.ForeColor = System.Drawing.Color.Red;
+            this.lblZ9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.lblZ9.Location = new System.Drawing.Point(363, 240);
             this.lblZ9.Name = "lblZ9";
             this.lblZ9.Size = new System.Drawing.Size(15, 20);
@@ -353,7 +356,7 @@
             // 
             this.lblZ7.AutoSize = true;
             this.lblZ7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZ7.ForeColor = System.Drawing.Color.Red;
+            this.lblZ7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.lblZ7.Location = new System.Drawing.Point(394, 183);
             this.lblZ7.Name = "lblZ7";
             this.lblZ7.Size = new System.Drawing.Size(15, 20);
@@ -364,7 +367,7 @@
             // 
             this.lblZ6.AutoSize = true;
             this.lblZ6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZ6.ForeColor = System.Drawing.Color.Red;
+            this.lblZ6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.lblZ6.Location = new System.Drawing.Point(116, 183);
             this.lblZ6.Name = "lblZ6";
             this.lblZ6.Size = new System.Drawing.Size(15, 20);
@@ -375,7 +378,7 @@
             // 
             this.lblZ4.AutoSize = true;
             this.lblZ4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZ4.ForeColor = System.Drawing.Color.Red;
+            this.lblZ4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.lblZ4.Location = new System.Drawing.Point(86, 103);
             this.lblZ4.Name = "lblZ4";
             this.lblZ4.Size = new System.Drawing.Size(15, 20);
@@ -386,7 +389,7 @@
             // 
             this.lblZ5.AutoSize = true;
             this.lblZ5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZ5.ForeColor = System.Drawing.Color.Red;
+            this.lblZ5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.lblZ5.Location = new System.Drawing.Point(253, 103);
             this.lblZ5.Name = "lblZ5";
             this.lblZ5.Size = new System.Drawing.Size(15, 20);
@@ -397,7 +400,7 @@
             // 
             this.lblZ3.AutoSize = true;
             this.lblZ3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZ3.ForeColor = System.Drawing.Color.Red;
+            this.lblZ3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.lblZ3.Location = new System.Drawing.Point(454, 25);
             this.lblZ3.Name = "lblZ3";
             this.lblZ3.Size = new System.Drawing.Size(15, 20);
@@ -408,7 +411,7 @@
             // 
             this.lblZ2.AutoSize = true;
             this.lblZ2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZ2.ForeColor = System.Drawing.Color.Red;
+            this.lblZ2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.lblZ2.Location = new System.Drawing.Point(265, 25);
             this.lblZ2.Name = "lblZ2";
             this.lblZ2.Size = new System.Drawing.Size(15, 20);
@@ -419,7 +422,7 @@
             // 
             this.lblZ1.AutoSize = true;
             this.lblZ1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZ1.ForeColor = System.Drawing.Color.Red;
+            this.lblZ1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.lblZ1.Location = new System.Drawing.Point(98, 26);
             this.lblZ1.Name = "lblZ1";
             this.lblZ1.Size = new System.Drawing.Size(15, 20);
@@ -431,7 +434,7 @@
             this.txtDatumRodjenja.BackColor = System.Drawing.Color.White;
             this.txtDatumRodjenja.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDatumRodjenja.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDatumRodjenja.ForeColor = System.Drawing.Color.Black;
+            this.txtDatumRodjenja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.txtDatumRodjenja.Location = new System.Drawing.Point(367, 51);
             this.txtDatumRodjenja.Name = "txtDatumRodjenja";
             this.txtDatumRodjenja.Size = new System.Drawing.Size(126, 28);
@@ -443,7 +446,7 @@
             this.txtRadnaPozicija.BackColor = System.Drawing.Color.White;
             this.txtRadnaPozicija.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRadnaPozicija.Font = new System.Drawing.Font("Comic Sans MS", 11.25F);
-            this.txtRadnaPozicija.ForeColor = System.Drawing.Color.Black;
+            this.txtRadnaPozicija.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.txtRadnaPozicija.Location = new System.Drawing.Point(25, 334);
             this.txtRadnaPozicija.Name = "txtRadnaPozicija";
             this.txtRadnaPozicija.Size = new System.Drawing.Size(199, 28);
@@ -454,6 +457,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label13.Location = new System.Drawing.Point(21, 309);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(110, 19);
@@ -465,7 +469,7 @@
             this.txtUcionica.BackColor = System.Drawing.Color.White;
             this.txtUcionica.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUcionica.Font = new System.Drawing.Font("Comic Sans MS", 11.25F);
-            this.txtUcionica.ForeColor = System.Drawing.Color.Black;
+            this.txtUcionica.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.txtUcionica.Location = new System.Drawing.Point(299, 269);
             this.txtUcionica.Name = "txtUcionica";
             this.txtUcionica.Size = new System.Drawing.Size(199, 28);
@@ -476,6 +480,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label12.Location = new System.Drawing.Point(295, 244);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(70, 19);
@@ -487,7 +492,7 @@
             this.txtBrojTelefona.BackColor = System.Drawing.Color.White;
             this.txtBrojTelefona.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBrojTelefona.Font = new System.Drawing.Font("Comic Sans MS", 11.25F);
-            this.txtBrojTelefona.ForeColor = System.Drawing.Color.Black;
+            this.txtBrojTelefona.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.txtBrojTelefona.Location = new System.Drawing.Point(25, 269);
             this.txtBrojTelefona.Name = "txtBrojTelefona";
             this.txtBrojTelefona.Size = new System.Drawing.Size(199, 28);
@@ -498,6 +503,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label11.Location = new System.Drawing.Point(21, 244);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(96, 19);
@@ -509,7 +515,7 @@
             this.txtJMBG.BackColor = System.Drawing.Color.White;
             this.txtJMBG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtJMBG.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtJMBG.ForeColor = System.Drawing.Color.Black;
+            this.txtJMBG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.txtJMBG.Location = new System.Drawing.Point(355, 209);
             this.txtJMBG.Name = "txtJMBG";
             this.txtJMBG.Size = new System.Drawing.Size(143, 28);
@@ -520,6 +526,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label10.Location = new System.Drawing.Point(351, 184);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(46, 19);
@@ -531,7 +538,7 @@
             this.txtEmail.BackColor = System.Drawing.Color.White;
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmail.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.ForeColor = System.Drawing.Color.Black;
+            this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.txtEmail.Location = new System.Drawing.Point(25, 209);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(297, 28);
@@ -542,6 +549,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label9.Location = new System.Drawing.Point(21, 184);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(96, 19);
@@ -552,6 +560,7 @@
             // 
             this.rbFemale.AutoSize = true;
             this.rbFemale.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbFemale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.rbFemale.Location = new System.Drawing.Point(432, 129);
             this.rbFemale.Name = "rbFemale";
             this.rbFemale.Size = new System.Drawing.Size(66, 20);
@@ -564,6 +573,7 @@
             // 
             this.rbMale.AutoSize = true;
             this.rbMale.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbMale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.rbMale.Location = new System.Drawing.Point(372, 129);
             this.rbMale.Name = "rbMale";
             this.rbMale.Size = new System.Drawing.Size(54, 20);
@@ -576,6 +586,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label8.Location = new System.Drawing.Point(402, 104);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 19);
@@ -587,7 +598,7 @@
             this.txtLozinka.BackColor = System.Drawing.Color.White;
             this.txtLozinka.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLozinka.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLozinka.ForeColor = System.Drawing.Color.Black;
+            this.txtLozinka.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.txtLozinka.Location = new System.Drawing.Point(196, 129);
             this.txtLozinka.Name = "txtLozinka";
             this.txtLozinka.Size = new System.Drawing.Size(126, 28);
@@ -598,6 +609,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label6.Location = new System.Drawing.Point(192, 104);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 19);
@@ -609,7 +621,7 @@
             this.txtKorisnickoIme.BackColor = System.Drawing.Color.White;
             this.txtKorisnickoIme.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtKorisnickoIme.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKorisnickoIme.ForeColor = System.Drawing.Color.Black;
+            this.txtKorisnickoIme.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.txtKorisnickoIme.Location = new System.Drawing.Point(25, 129);
             this.txtKorisnickoIme.Name = "txtKorisnickoIme";
             this.txtKorisnickoIme.Size = new System.Drawing.Size(122, 28);
@@ -620,6 +632,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label7.Location = new System.Drawing.Point(21, 104);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(69, 19);
@@ -630,6 +643,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label5.Location = new System.Drawing.Point(363, 26);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(96, 19);
@@ -641,7 +655,7 @@
             this.txtPrezime.BackColor = System.Drawing.Color.White;
             this.txtPrezime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPrezime.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrezime.ForeColor = System.Drawing.Color.Black;
+            this.txtPrezime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.txtPrezime.Location = new System.Drawing.Point(196, 51);
             this.txtPrezime.Name = "txtPrezime";
             this.txtPrezime.Size = new System.Drawing.Size(126, 28);
@@ -652,6 +666,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label4.Location = new System.Drawing.Point(192, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 19);
@@ -663,7 +678,7 @@
             this.txtIme.BackColor = System.Drawing.Color.White;
             this.txtIme.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIme.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIme.ForeColor = System.Drawing.Color.Black;
+            this.txtIme.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.txtIme.Location = new System.Drawing.Point(25, 51);
             this.txtIme.Name = "txtIme";
             this.txtIme.Size = new System.Drawing.Size(122, 28);
@@ -674,6 +689,7 @@
             // 
             this.lblIme.AutoSize = true;
             this.lblIme.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIme.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.lblIme.Location = new System.Drawing.Point(21, 26);
             this.lblIme.Name = "lblIme";
             this.lblIme.Size = new System.Drawing.Size(80, 19);

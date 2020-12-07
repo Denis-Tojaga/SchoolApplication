@@ -351,5 +351,7 @@ namespace SchoolApp.ChildForms
         {
             PrikaziEditStar(lblZ10);
         }
+
+      
     }
 }

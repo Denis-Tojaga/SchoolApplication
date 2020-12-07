@@ -50,7 +50,7 @@ namespace SchoolApp
             childForma.BringToFront();
             childForma.Show();
             lblTitle.Text = childForma.Text;
-            lblTitle.BackColor = Color.FromArgb(30, 115, 172);
+            lblTitle.BackColor = Color.FromArgb(39, 39, 58);
         }
 
 
@@ -112,5 +112,7 @@ namespace SchoolApp
             frmSubjects subjects = new frmSubjects(_profesor);
             OpenChildForm(subjects, sender);
         }
+
+      
     }
 }

@@ -68,7 +68,8 @@
             this.lbViewOf.Name = "lbViewOf";
             this.lbViewOf.Size = new System.Drawing.Size(125, 24);
             this.lbViewOf.TabIndex = 2;
-            this.lbViewOf.Text = "View of:";
+            this.lbViewOf.Text = "Logged user";
+            this.lbViewOf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
@@ -92,13 +93,13 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label1.Location = new System.Drawing.Point(0, 243);
+            this.label1.Location = new System.Drawing.Point(12, 243);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(937, 35);
+            this.label1.Size = new System.Drawing.Size(913, 35);
             this.label1.TabIndex = 7;
             this.label1.Text = "Student List";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -111,11 +112,11 @@
             this.dgvStudents.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvStudents.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.dgvStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStudents.ColumnHeadersHeight = 45;
             this.dgvStudents.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -128,10 +129,10 @@
             this.Dateofbirth});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvStudents.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvStudents.GridColor = System.Drawing.Color.White;
@@ -220,6 +221,7 @@
             // txtFilter
             // 
             this.txtFilter.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.txtFilter.Location = new System.Drawing.Point(490, 293);
             this.txtFilter.Name = "txtFilter";
             this.txtFilter.Size = new System.Drawing.Size(326, 28);
@@ -244,7 +246,7 @@
             // pbCurrentUser
             // 
             this.pbCurrentUser.Image = global::SchoolApp.Properties.Resources.SLIKA;
-            this.pbCurrentUser.Location = new System.Drawing.Point(886, 9);
+            this.pbCurrentUser.Location = new System.Drawing.Point(895, 9);
             this.pbCurrentUser.Name = "pbCurrentUser";
             this.pbCurrentUser.Size = new System.Drawing.Size(28, 24);
             this.pbCurrentUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -268,7 +270,7 @@
             // 
             // btnAddStudent
             // 
-            this.btnAddStudent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(140)))), ((int)(((byte)(219)))));
+            this.btnAddStudent.BackColor = System.Drawing.Color.White;
             this.btnAddStudent.BackgroundImage = global::SchoolApp.Properties.Resources.student2;
             this.btnAddStudent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAddStudent.FlatAppearance.BorderSize = 2;
@@ -284,6 +286,7 @@
             // 
             this.rbPoIndeksu.AutoSize = true;
             this.rbPoIndeksu.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPoIndeksu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.rbPoIndeksu.Location = new System.Drawing.Point(185, 296);
             this.rbPoIndeksu.Name = "rbPoIndeksu";
             this.rbPoIndeksu.Size = new System.Drawing.Size(91, 20);
@@ -297,6 +300,7 @@
             // 
             this.rbPoImenu.AutoSize = true;
             this.rbPoImenu.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPoImenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.rbPoImenu.Location = new System.Drawing.Point(283, 297);
             this.rbPoImenu.Name = "rbPoImenu";
             this.rbPoImenu.Size = new System.Drawing.Size(88, 20);
@@ -310,6 +314,7 @@
             // 
             this.rbPoGodiniStudija.AutoSize = true;
             this.rbPoGodiniStudija.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbPoGodiniStudija.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.rbPoGodiniStudija.Location = new System.Drawing.Point(375, 298);
             this.rbPoGodiniStudija.Name = "rbPoGodiniStudija";
             this.rbPoGodiniStudija.Size = new System.Drawing.Size(108, 20);
@@ -323,6 +328,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.label2.Location = new System.Drawing.Point(70, 293);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 23);
