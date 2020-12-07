@@ -283,6 +283,7 @@
             this.btnMail.TabIndex = 22;
             this.btnMail.Text = "Mail/SMS";
             this.btnMail.UseVisualStyleBackColor = false;
+            this.btnMail.Click += new System.EventHandler(this.btnMail_Click);
             // 
             // btnEvents
             // 

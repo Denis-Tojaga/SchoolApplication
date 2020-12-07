@@ -22,6 +22,7 @@ namespace SchoolApp
         public byte[] Slika { get; set; }
         public string GodinaStudija { get; set; }
 
+        public string GetIndeks() => $"{BrojIndeksa}";
 
         public override string ToString()
         {

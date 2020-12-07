@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolApp.CalendarManagementForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,6 +36,12 @@ namespace SchoolApp.ChildForms
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnMail_Click(object sender, EventArgs e)
+        {
+            frmSendMail emailSend = new frmSendMail(_profesor);
+            emailSend.ShowDialog();
         }
     }
 }
