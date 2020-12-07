@@ -17,6 +17,35 @@ namespace SchoolApp.SubjectManagementForms
         public frmAddSubject()
         {
             InitializeComponent();
+            UcitajProfesoreUCMB();
+
+        }
+        private void frmAddSubject_Load(object sender, EventArgs e)
+        {
+            GenerateSubjectCode();
+        }
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+
+
+        /// <summary>
+        /// Loads all DB professors to combo box Professors
+        /// </summary>
+        private void UcitajProfesoreUCMB()
+        {
+            try
+            {
+                var profesori = konekcijaNaBazu.Profesori;
+                cmbProfesori.DataSource = profesori.ToList();
+                cmbProfesori.DisplayMember = "Ime";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message} {ex.InnerException?.Message}");
+            }
         }
 
         private void btnImportSyllabus_Click(object sender, EventArgs e)
@@ -25,11 +54,14 @@ namespace SchoolApp.SubjectManagementForms
                 pbSyllabusPic.Image = Image.FromFile(ofdOdabirSlike.FileName);
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
 
+
+
+
+
+        /// <summary>
+        /// Adds new subject with all his data in DB
+        /// </summary>
         private void btnAddSubject_Click(object sender, EventArgs e)
         {
             if(ValidirajPolja())
@@ -42,7 +74,7 @@ namespace SchoolApp.SubjectManagementForms
                     ECTS = int.Parse(txtECTS.Text),
                     BrojSatiPredavanja = int.Parse((cmbLessonHours.SelectedItem).ToString()),
                     BrojSatiVjezbi = int.Parse((cmbPracticeHours.SelectedItem).ToString()),
-                    Profesor = txtProfessor.Text,
+                    Profesor = (cmbProfesori.SelectedItem as Profesor).ToString(),
                     Dogadjaj=txtAction.Text,
                     Syllabus = ImageConventer.FromImageToByte(pbSyllabusPic.Image)
                 });
@@ -53,24 +85,40 @@ namespace SchoolApp.SubjectManagementForms
             }
         }
 
+
+
+
+
+
+
+
+        /// <summary>
+        /// Validates all controls in the form
+        /// </summary>
         private bool ValidirajPolja()
         {
             return Validator.ValidirajPolje(txtSubjectName, err, Upozorenje) && Validator.ValidirajPolje(cmbYearOfStudy, err, Upozorenje) &&
                  Validator.ValidirajPolje(txtECTS, err, Upozorenje) && Validator.ValidirajPolje(cmbPracticeHours, err, Upozorenje) &&
-                 Validator.ValidirajPolje(cmbLessonHours, err, Upozorenje) && Validator.ValidirajPolje(txtProfessor, err, Upozorenje)
+                 Validator.ValidirajPolje(cmbLessonHours, err, Upozorenje) && Validator.ValidirajPolje(cmbProfesori, err, Upozorenje)
                  && Validator.ValidirajPolje(txtAction, err, Upozorenje) && Validator.ValidirajPolje(pbSyllabusPic, err, Upozorenje);
         }
 
-        private void frmAddSubject_Load(object sender, EventArgs e)
-        {
-            GenerateSubjectCode();
-        }
 
+
+
+
+
+
+        /// <summary>
+        /// Generates subject code
+        /// </summary>
         private void GenerateSubjectCode()
         {
             Random random = new Random();
             for (int i = 0; i < 4; i++)
                 txtSubjectCode.Text += random.Next(10, 100);
         }
+
+        
     }
 }

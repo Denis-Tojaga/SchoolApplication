@@ -113,6 +113,17 @@ namespace SchoolApp
             OpenChildForm(subjects, sender);
         }
 
-      
+        private void btnCalendar_Click(object sender, EventArgs e)
+        {
+            frmKalendar calendarForm = new frmKalendar(_profesor);
+            OpenChildForm(calendarForm, sender);
+        }
+
+        private void frmAppMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+            frmLogin login = new frmLogin();
+            login.Show();
+        }
     }
 }

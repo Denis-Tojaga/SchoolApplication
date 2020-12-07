@@ -153,6 +153,16 @@ namespace SchoolApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logout {
+            get {
+                object obj = ResourceManager.GetObject("logout", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lupa3 {
             get {
                 object obj = ResourceManager.GetObject("lupa3", resourceCulture);
@@ -186,6 +196,16 @@ namespace SchoolApp.Properties {
         internal static System.Drawing.Bitmap passwordImage {
             get {
                 object obj = ResourceManager.GetObject("passwordImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap prof4 {
+            get {
+                object obj = ResourceManager.GetObject("prof4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +256,16 @@ namespace SchoolApp.Properties {
         internal static System.Drawing.Bitmap student2 {
             get {
                 object obj = ResourceManager.GetObject("student2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap studentIkonica {
+            get {
+                object obj = ResourceManager.GetObject("studentIkonica", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

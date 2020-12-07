@@ -17,8 +17,6 @@ namespace SchoolApp.ChildForms
         Profesor _profesor;
         List<int> brojPolja = new List<int>();
         List<string> godineStudija = new List<string>();
-        bool ValidniBoxovi = false;
-
 
         //Loads all data to combo boxes
         public frmSubjects()
@@ -138,10 +136,7 @@ namespace SchoolApp.ChildForms
         private bool ProvjeriValidnostBoxova()
         {
             if (Validator.ValidirajPolje(cmbBrojPolja, err, "Vrijednost nije validna!") && Validator.ValidirajPolje(cmbGodinaStudija, err, "Vrijednost nije validna"))
-            {
-                ValidniBoxovi = true;
                 return true;
-            }
             return false;
         }
 
@@ -241,6 +236,8 @@ namespace SchoolApp.ChildForms
             return brojac;
         }
 
+
+        //Opens the new form for adding subject and its details
         private void btnAddSubject_Click(object sender, EventArgs e)
         {
             frmAddSubject frmPredmetAdd = new frmAddSubject();

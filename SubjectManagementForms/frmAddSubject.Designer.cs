@@ -42,7 +42,6 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtProfessor = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -60,6 +59,7 @@
             this.btnImportSyllabus = new System.Windows.Forms.Button();
             this.ofdOdabirSlike = new System.Windows.Forms.OpenFileDialog();
             this.err = new System.Windows.Forms.ErrorProvider(this.components);
+            this.cmbProfesori = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSyllabusPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.err)).BeginInit();
@@ -68,6 +68,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.panel1.Controls.Add(this.cmbProfesori);
             this.panel1.Controls.Add(this.cmbPracticeHours);
             this.panel1.Controls.Add(this.cmbLessonHours);
             this.panel1.Controls.Add(this.cmbYearOfStudy);
@@ -80,7 +81,6 @@
             this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.txtProfessor);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label6);
@@ -248,17 +248,6 @@
             this.label11.Size = new System.Drawing.Size(86, 18);
             this.label11.TabIndex = 21;
             this.label11.Text = "Professor";
-            // 
-            // txtProfessor
-            // 
-            this.txtProfessor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
-            this.txtProfessor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtProfessor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProfessor.ForeColor = System.Drawing.Color.White;
-            this.txtProfessor.Location = new System.Drawing.Point(60, 297);
-            this.txtProfessor.Name = "txtProfessor";
-            this.txtProfessor.Size = new System.Drawing.Size(171, 19);
-            this.txtProfessor.TabIndex = 3;
             // 
             // label12
             // 
@@ -429,6 +418,22 @@
             this.err.BlinkRate = 150;
             this.err.ContainerControl = this;
             // 
+            // cmbProfesori
+            // 
+            this.cmbProfesori.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.cmbProfesori.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbProfesori.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.cmbProfesori.FormattingEnabled = true;
+            this.cmbProfesori.Items.AddRange(new object[] {
+            "20",
+            "30",
+            "40",
+            "50"});
+            this.cmbProfesori.Location = new System.Drawing.Point(60, 297);
+            this.cmbProfesori.Name = "cmbProfesori";
+            this.cmbProfesori.Size = new System.Drawing.Size(189, 24);
+            this.cmbProfesori.TabIndex = 39;
+            // 
             // frmAddSubject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -462,7 +467,6 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtProfessor;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label6;
@@ -484,5 +488,6 @@
         private System.Windows.Forms.ComboBox cmbPracticeHours;
         private System.Windows.Forms.ComboBox cmbLessonHours;
         private System.Windows.Forms.ComboBox cmbYearOfStudy;
+        private System.Windows.Forms.ComboBox cmbProfesori;
     }
 }

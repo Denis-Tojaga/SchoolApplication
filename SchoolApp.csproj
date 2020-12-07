@@ -72,6 +72,12 @@
     <Compile Include="ChildForms\frmHome.Designer.cs">
       <DependentUpon>frmHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChildForms\frmKalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\frmKalendar.Designer.cs">
+      <DependentUpon>frmKalendar.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChildForms\frmStudents.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     <Compile Include="Validator.cs" />
     <EmbeddedResource Include="ChildForms\frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\frmKalendar.resx">
+      <DependentUpon>frmKalendar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\frmStudents.resx">
       <DependentUpon>frmStudents.cs</DependentUpon>
@@ -245,6 +254,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\knijge.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\studentIkonica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prof4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

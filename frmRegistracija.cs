@@ -67,6 +67,8 @@ namespace SchoolApp
         private void label22_Click(object sender, EventArgs e)
         {
             Close();
+            frmLogin login = new frmLogin();
+            login.Show();
         }
 
 
