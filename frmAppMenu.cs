@@ -121,11 +121,10 @@ namespace SchoolApp
             frmSettings formaSettings = new frmSettings(_profesor);
             OpenChildForm(formaSettings, sender);
         }
-        private void frmAppMenu_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Close();
-            frmLogin login = new frmLogin();
-            login.Show();
-        }
+        //private void frmAppMenu_FormClosed(object sender, FormClosedEventArgs e)
+        //{
+        //    Close();
+           
+        //}
     }
 }

@@ -104,6 +104,7 @@
             this.btnLogout.TabIndex = 6;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // pictureBox3
             // 
@@ -129,6 +130,7 @@
             this.btnLanguage.TabIndex = 4;
             this.btnLanguage.Text = "Language";
             this.btnLanguage.UseVisualStyleBackColor = false;
+            this.btnLanguage.Click += new System.EventHandler(this.btnLanguage_Click);
             // 
             // pictureBox2
             // 
@@ -154,6 +156,7 @@
             this.btnPrivacy.TabIndex = 2;
             this.btnPrivacy.Text = "Privacy";
             this.btnPrivacy.UseVisualStyleBackColor = false;
+            this.btnPrivacy.Click += new System.EventHandler(this.btnPrivacy_Click);
             // 
             // pictureBox1
             // 
@@ -180,6 +183,7 @@
             this.btnGeneral.TabIndex = 0;
             this.btnGeneral.Text = "General";
             this.btnGeneral.UseVisualStyleBackColor = false;
+            this.btnGeneral.Click += new System.EventHandler(this.btnGeneral_Click);
             // 
             // frmSettings
             // 

@@ -355,7 +355,6 @@
             this.Name = "frmAppMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAppMenu_FormClosed);
             this.Load += new System.EventHandler(this.frmAppMenu_Load);
             this.panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
