@@ -296,7 +296,7 @@
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(641, 170);
+            this.label21.Location = new System.Drawing.Point(604, 170);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(40, 18);
             this.label21.TabIndex = 20;
@@ -360,7 +360,7 @@
             this.label27.AutoSize = true;
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(628, 261);
+            this.label27.Location = new System.Drawing.Point(594, 259);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(57, 18);
             this.label27.TabIndex = 26;

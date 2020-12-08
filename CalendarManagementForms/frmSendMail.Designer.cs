@@ -45,6 +45,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.ofdFile = new System.Windows.Forms.OpenFileDialog();
             this.err = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtAttachment = new System.Windows.Forms.TextBox();
+            this.lblAttachment = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.err)).BeginInit();
             this.SuspendLayout();
             // 
@@ -170,7 +173,6 @@
             this.btnAttachment.BackColor = System.Drawing.Color.White;
             this.btnAttachment.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnAttachment.FlatAppearance.BorderSize = 3;
-            this.btnAttachment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAttachment.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAttachment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.btnAttachment.Location = new System.Drawing.Point(673, 97);
@@ -180,13 +182,13 @@
             this.btnAttachment.Text = "Add Attachment";
             this.btnAttachment.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAttachment.UseVisualStyleBackColor = false;
+            this.btnAttachment.Click += new System.EventHandler(this.btnAttachment_Click);
             // 
             // btnSend
             // 
             this.btnSend.BackColor = System.Drawing.Color.White;
             this.btnSend.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSend.FlatAppearance.BorderSize = 3;
-            this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSend.Font = new System.Drawing.Font("Comic Sans MS", 14F, System.Drawing.FontStyle.Bold);
             this.btnSend.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.btnSend.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -217,12 +219,47 @@
             // 
             this.err.ContainerControl = this;
             // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(153, 181);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(200, 2);
+            this.label8.TabIndex = 20;
+            // 
+            // txtAttachment
+            // 
+            this.txtAttachment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.txtAttachment.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAttachment.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAttachment.ForeColor = System.Drawing.Color.White;
+            this.txtAttachment.Location = new System.Drawing.Point(152, 157);
+            this.txtAttachment.Name = "txtAttachment";
+            this.txtAttachment.Size = new System.Drawing.Size(201, 23);
+            this.txtAttachment.TabIndex = 19;
+            this.txtAttachment.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblAttachment
+            // 
+            this.lblAttachment.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAttachment.ForeColor = System.Drawing.Color.White;
+            this.lblAttachment.Location = new System.Drawing.Point(12, 157);
+            this.lblAttachment.Name = "lblAttachment";
+            this.lblAttachment.Size = new System.Drawing.Size(137, 27);
+            this.lblAttachment.TabIndex = 18;
+            this.lblAttachment.Text = "Attachment:";
+            this.lblAttachment.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // frmSendMail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.ClientSize = new System.Drawing.Size(861, 314);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtAttachment);
+            this.Controls.Add(this.lblAttachment);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.btnAttachment);
@@ -266,5 +303,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.OpenFileDialog ofdFile;
         private System.Windows.Forms.ErrorProvider err;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtAttachment;
+        private System.Windows.Forms.Label lblAttachment;
     }
 }
