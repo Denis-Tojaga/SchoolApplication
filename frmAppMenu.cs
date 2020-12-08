@@ -106,30 +106,26 @@ namespace SchoolApp
             frmStudents students = new frmStudents(_profesor);
             OpenChildForm(students, sender);
         }
-
         private void btnSubjects_Click(object sender, EventArgs e)
         {
             frmSubjects subjects = new frmSubjects(_profesor);
             OpenChildForm(subjects, sender);
         }
-
         private void btnCalendar_Click(object sender, EventArgs e)
         {
             frmKalendar calendarForm = new frmKalendar(_profesor);
             OpenChildForm(calendarForm, sender);
         }
-
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            frmSettings formaSettings = new frmSettings(_profesor);
+            OpenChildForm(formaSettings, sender);
+        }
         private void frmAppMenu_FormClosed(object sender, FormClosedEventArgs e)
         {
             Close();
             frmLogin login = new frmLogin();
             login.Show();
-        }
-
-        private void btnSettings_Click(object sender, EventArgs e)
-        {
-            frmSettings formaSettings = new frmSettings(_profesor);
-            formaSettings.Show();
         }
     }
 }
