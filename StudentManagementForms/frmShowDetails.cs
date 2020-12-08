@@ -40,7 +40,7 @@ namespace SchoolApp.StudentManagementForms
             lblGodinaStudija.Text = student.GodinaStudija;
             lblGodine.Text = student.Godine.ToString();
             lblImeOca.Text = student.ImeOca;
-            if (student.Slika != null)
+            if (ImageConventer.FromByteToImage(student.Slika)!=null)
                 pbSlikaStudenta.Image = ImageConventer.FromByteToImage(student.Slika);
             else
                 pbSlikaStudenta.Image = null;
