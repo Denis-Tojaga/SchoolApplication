@@ -103,7 +103,7 @@
             this.txtSubject.Location = new System.Drawing.Point(152, 97);
             this.txtSubject.Name = "txtSubject";
             this.txtSubject.Size = new System.Drawing.Size(201, 23);
-            this.txtSubject.TabIndex = 7;
+            this.txtSubject.TabIndex = 0;
             this.txtSubject.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
@@ -127,7 +127,7 @@
             this.cmbStudenti.Location = new System.Drawing.Point(570, 26);
             this.cmbStudenti.Name = "cmbStudenti";
             this.cmbStudenti.Size = new System.Drawing.Size(197, 27);
-            this.cmbStudenti.TabIndex = 9;
+            this.cmbStudenti.TabIndex = 1;
             this.cmbStudenti.SelectedIndexChanged += new System.EventHandler(this.cmbStudenti_SelectedIndexChanged);
             // 
             // label5
@@ -155,7 +155,7 @@
             this.txtContent.Location = new System.Drawing.Point(419, 138);
             this.txtContent.Name = "txtContent";
             this.txtContent.Size = new System.Drawing.Size(430, 164);
-            this.txtContent.TabIndex = 13;
+            this.txtContent.TabIndex = 2;
             this.txtContent.Text = "";
             // 
             // label7
@@ -178,7 +178,7 @@
             this.btnAttachment.Location = new System.Drawing.Point(673, 97);
             this.btnAttachment.Name = "btnAttachment";
             this.btnAttachment.Size = new System.Drawing.Size(176, 35);
-            this.btnAttachment.TabIndex = 15;
+            this.btnAttachment.TabIndex = 3;
             this.btnAttachment.Text = "Add Attachment";
             this.btnAttachment.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAttachment.UseVisualStyleBackColor = false;
@@ -195,7 +195,7 @@
             this.btnSend.Location = new System.Drawing.Point(33, 253);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(201, 40);
-            this.btnSend.TabIndex = 16;
+            this.btnSend.TabIndex = 4;
             this.btnSend.Text = "Send message";
             this.btnSend.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSend.UseVisualStyleBackColor = false;
@@ -236,6 +236,7 @@
             this.txtAttachment.ForeColor = System.Drawing.Color.White;
             this.txtAttachment.Location = new System.Drawing.Point(152, 157);
             this.txtAttachment.Name = "txtAttachment";
+            this.txtAttachment.ReadOnly = true;
             this.txtAttachment.Size = new System.Drawing.Size(201, 23);
             this.txtAttachment.TabIndex = 19;
             this.txtAttachment.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

@@ -28,7 +28,7 @@ namespace SchoolApp.ChildForms
 
         private void frmKalendar_Load(object sender, EventArgs e)
         {
-            lblCurrentUser.Text = _profesor.KorisnickoIme;
+            lblTrenutni.Text = _profesor.KorisnickoIme;
             lblCountProfessors.Text = konekcijaNaBazu.Profesori.Count().ToString();
             lblCountStudents.Text = konekcijaNaBazu.Studenti.Count().ToString();
         }

@@ -32,10 +32,12 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.lblCountStudents = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.lblCountProfessors = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.lblCurrentUser = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblTrenutni = new System.Windows.Forms.Label();
@@ -43,8 +45,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnNewBoard = new System.Windows.Forms.Button();
             this.btnClassSchedule = new System.Windows.Forms.Button();
@@ -92,15 +92,29 @@
             this.lblCountStudents.TabIndex = 3;
             this.lblCountStudents.Text = "5";
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.BackgroundImage = global::SchoolApp.Properties.Resources.studentIkonica;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(179, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(106, 101);
+            this.panel4.TabIndex = 2;
+            // 
             // monthCalendar1
             // 
             this.monthCalendar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(2, 2);
+            this.monthCalendar1.FirstDayOfWeek = System.Windows.Forms.Day.Monday;
             this.monthCalendar1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.monthCalendar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.monthCalendar1.Location = new System.Drawing.Point(477, 196);
             this.monthCalendar1.Margin = new System.Windows.Forms.Padding(0);
             this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.SelectionRange = new System.Windows.Forms.SelectionRange(new System.DateTime(2020, 12, 1, 0, 0, 0, 0), new System.DateTime(2020, 12, 7, 0, 0, 0, 0));
+            this.monthCalendar1.ShowTodayCircle = false;
             this.monthCalendar1.ShowWeekNumbers = true;
             this.monthCalendar1.TabIndex = 11;
             this.monthCalendar1.TitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
@@ -141,6 +155,17 @@
             this.lblCountProfessors.TabIndex = 6;
             this.lblCountProfessors.Text = "5";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::SchoolApp.Properties.Resources.prof4;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(179, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(106, 101);
+            this.panel1.TabIndex = 2;
+            // 
             // lblCurrentUser
             // 
             this.lblCurrentUser.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -165,7 +190,7 @@
             // 
             this.lblTrenutni.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
             this.lblTrenutni.ForeColor = System.Drawing.Color.Black;
-            this.lblTrenutni.Location = new System.Drawing.Point(657, 4);
+            this.lblTrenutni.Location = new System.Drawing.Point(683, 12);
             this.lblTrenutni.Name = "lblTrenutni";
             this.lblTrenutni.Size = new System.Drawing.Size(140, 25);
             this.lblTrenutni.TabIndex = 15;
@@ -176,7 +201,7 @@
             // 
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(843, 4);
+            this.label4.Location = new System.Drawing.Point(876, 12);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 25);
             this.label4.TabIndex = 16;
@@ -185,7 +210,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::SchoolApp.Properties.Resources.logout;
-            this.pictureBox3.Location = new System.Drawing.Point(896, 3);
+            this.pictureBox3.Location = new System.Drawing.Point(929, 11);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(30, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -213,32 +238,10 @@
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.BackgroundImage = global::SchoolApp.Properties.Resources.studentIkonica;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(179, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(106, 101);
-            this.panel4.TabIndex = 2;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::SchoolApp.Properties.Resources.prof4;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(179, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(106, 101);
-            this.panel1.TabIndex = 2;
-            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::SchoolApp.Properties.Resources.SLIKA;
-            this.pictureBox4.Location = new System.Drawing.Point(796, 4);
+            this.pictureBox4.Location = new System.Drawing.Point(829, 12);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(30, 25);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -303,7 +306,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(932, 519);
+            this.ClientSize = new System.Drawing.Size(961, 519);
             this.Controls.Add(this.btnMail);
             this.Controls.Add(this.btnEvents);
             this.Controls.Add(this.btnClassSchedule);

@@ -85,6 +85,12 @@
     <Compile Include="ChildForms\frmKalendar.Designer.cs">
       <DependentUpon>frmKalendar.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChildForms\frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChildForms\frmStudents.cs">
       <SubType>Form</SubType>
     </Compile>
