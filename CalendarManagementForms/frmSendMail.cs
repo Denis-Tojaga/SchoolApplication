@@ -16,6 +16,7 @@ namespace SchoolApp.CalendarManagementForms
     public partial class frmSendMail : Form
     {
         DatabaseConnection konekcijaNaBazu = new DatabaseConnection();
+        Attachment _data=null;
         private Profesor _profesor;
         public frmSendMail()
         {
@@ -54,7 +55,8 @@ namespace SchoolApp.CalendarManagementForms
         private bool ValidnaPolja()
         {
             return Validator.ValidirajPolje(txtToUser, err, "This field is required!") && Validator.ValidirajPolje(txtContent, err, "This field is required!")
-                 && Validator.ValidirajPolje(txtSubject, err, "This field is required!") && Validator.ValidirajPolje(cmbStudenti, err, "This field is required!");
+                 && Validator.ValidirajPolje(txtSubject, err, "This field is required!") && Validator.ValidirajPolje(cmbStudenti, err, "This field is required!")
+                 && Validator.ValidirajPolje(txtContent, err, "This field is required");
         }
 
         private void frmSendMail_Load(object sender, EventArgs e)
@@ -83,8 +85,8 @@ namespace SchoolApp.CalendarManagementForms
                 disposition.ReadDate = System.IO.File.GetLastAccessTime(file);
                 // Add the file attachment to this email message.
 
-
                 txtAttachment.Text = data.Name.ToString();
+                _data = data;
                 data.Dispose();
             }else
                 MessageBox.Show($"Something went wrong...:/");
