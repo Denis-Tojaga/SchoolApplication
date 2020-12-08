@@ -52,9 +52,9 @@
             this.lblClickedButtonValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.lblClickedButtonValue.Location = new System.Drawing.Point(209, 31);
             this.lblClickedButtonValue.Name = "lblClickedButtonValue";
-            this.lblClickedButtonValue.Size = new System.Drawing.Size(416, 43);
+            this.lblClickedButtonValue.Size = new System.Drawing.Size(503, 43);
             this.lblClickedButtonValue.TabIndex = 0;
-            this.lblClickedButtonValue.Text = "General settings of your account";
+            this.lblClickedButtonValue.Text = "Settings of your account";
             // 
             // label2
             // 
