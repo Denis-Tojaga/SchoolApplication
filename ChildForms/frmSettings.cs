@@ -12,11 +12,18 @@ namespace SchoolApp.ChildForms
 {
     public partial class frmSettings : Form
     {
+        Profesor _profesor;
         public frmSettings()
         {
             InitializeComponent();
+            _profesor = new Profesor();
         }
 
-      
+        public frmSettings(Profesor profesor) : this()
+        {
+            _profesor = profesor;
+        }
+
+
     }
 }

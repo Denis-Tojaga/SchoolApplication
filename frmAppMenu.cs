@@ -125,5 +125,11 @@ namespace SchoolApp
             frmLogin login = new frmLogin();
             login.Show();
         }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            frmSettings formaSettings = new frmSettings(_profesor);
+            formaSettings.Show();
+        }
     }
 }
