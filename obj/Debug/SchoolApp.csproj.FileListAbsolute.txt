@@ -46,3 +46,4 @@ C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.ChildForms
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.SubjectManagementForms.frmAddSubject.resources
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.ChildForms.frmKalendar.resources
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.CalendarManagementForms.frmSendMail.resources
+C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.ChildForms.frmSettings.resources

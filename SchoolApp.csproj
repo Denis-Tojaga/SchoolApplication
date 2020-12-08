@@ -158,6 +158,9 @@
     <EmbeddedResource Include="ChildForms\frmKalendar.resx">
       <DependentUpon>frmKalendar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\frmStudents.resx">
       <DependentUpon>frmStudents.cs</DependentUpon>
     </EmbeddedResource>
@@ -283,6 +286,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\emailLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slika3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jezik5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
