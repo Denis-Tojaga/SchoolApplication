@@ -12,9 +12,15 @@ namespace SchoolApp.SettingsManagementForms
 {
     public partial class frmPrivacy : Form
     {
+        Profesor _professor;
         public frmPrivacy()
         {
             InitializeComponent();
+        }
+
+        public frmPrivacy(Profesor profesor)  : this()
+        {
+            _professor = profesor;
         }
     }
 }

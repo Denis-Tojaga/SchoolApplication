@@ -108,6 +108,7 @@ namespace SchoolApp
                     novi.DatumZaposlenja = txtDatumRegistracije.Text;
                     novi.Spol = ProvjeriOznaceniButton();
                     novi.RadnaPozicija = txtPozicija.Text;
+                    novi.SigurnosnaRijec = txtSigurnosnaRijec.Text;
 
 
                     konekcijaNaBazu.Profesori.Add(novi);
@@ -145,7 +146,8 @@ namespace SchoolApp
             return Validator.ValidirajPolje(txtPrezime, err, WarningMessage)
                  && Validator.ValidirajPolje(txtKorisnickoIme, err, WarningMessage) && Validator.ValidirajPolje(txtLozinka, err, WarningMessage) &&
                  Validator.ValidirajPolje(txtBrojTelefona, err, WarningMessage) && Validator.ValidirajPolje(txtUcionica, err, WarningMessage) &&
-                 Validator.ValidirajPolje(dtmDatumRodjenja, err, WarningMessage) && Validator.ValidirajPolje(txtIme, err, WarningMessage) &&
+                 Validator.ValidirajPolje(dtmDatumRodjenja, err, WarningMessage) && Validator.ValidirajPolje(txtIme, err, WarningMessage)
+                 && Validator.ValidirajPolje(txtSigurnosnaRijec, err, WarningMessage) &&
                  Validator.ValidirajPolje(txtPozicija, err, WarningMessage) && 
                  Validator.ValidirajPolje(rbMale, err, WarningMessage) || Validator.ValidirajPolje(rbFemale, err, WarningMessage);
         }

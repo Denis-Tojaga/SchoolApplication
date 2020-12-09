@@ -23,6 +23,7 @@ namespace SchoolApp
         public string JMBG { get; set; }
         public string Ucionica { get; set; }
         public string RadnaPozicija { get; set; }
+        public string SigurnosnaRijec { get; set; }
 
         public string Spol { get; set; }
 

@@ -76,6 +76,9 @@
             this.err = new System.Windows.Forms.ErrorProvider(this.components);
             this.ofdOdabirSlike = new System.Windows.Forms.OpenFileDialog();
             this.label22 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.txtSigurnosnaRijec = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlikaProfesora)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -131,6 +134,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.panel1.Controls.Add(this.label26);
+            this.panel1.Controls.Add(this.label27);
+            this.panel1.Controls.Add(this.txtSigurnosnaRijec);
             this.panel1.Controls.Add(this.label24);
             this.panel1.Controls.Add(this.label25);
             this.panel1.Controls.Add(this.txtPozicija);
@@ -272,7 +278,7 @@
             this.btnRegistracijaKorisnika.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistracijaKorisnika.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistracijaKorisnika.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnRegistracijaKorisnika.Location = new System.Drawing.Point(173, 435);
+            this.btnRegistracijaKorisnika.Location = new System.Drawing.Point(323, 413);
             this.btnRegistracijaKorisnika.Name = "btnRegistracijaKorisnika";
             this.btnRegistracijaKorisnika.Size = new System.Drawing.Size(221, 39);
             this.btnRegistracijaKorisnika.TabIndex = 11;
@@ -607,6 +613,37 @@
             this.label22.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
+            // label26
+            // 
+            this.label26.BackColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(49, 446);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(170, 1);
+            this.label26.TabIndex = 44;
+            this.label26.Text = "label26";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.label27.Location = new System.Drawing.Point(44, 402);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(138, 18);
+            this.label27.TabIndex = 43;
+            this.label27.Text = "Sigurnosna rijec";
+            // 
+            // txtSigurnosnaRijec
+            // 
+            this.txtSigurnosnaRijec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.txtSigurnosnaRijec.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSigurnosnaRijec.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSigurnosnaRijec.ForeColor = System.Drawing.Color.White;
+            this.txtSigurnosnaRijec.Location = new System.Drawing.Point(48, 423);
+            this.txtSigurnosnaRijec.Name = "txtSigurnosnaRijec";
+            this.txtSigurnosnaRijec.Size = new System.Drawing.Size(171, 19);
+            this.txtSigurnosnaRijec.TabIndex = 42;
+            // 
             // frmRegistracija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -683,5 +720,8 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox txtPozicija;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox txtSigurnosnaRijec;
     }
 }

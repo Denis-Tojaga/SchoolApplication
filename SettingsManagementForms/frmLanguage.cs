@@ -12,9 +12,14 @@ namespace SchoolApp.SettingsManagementForms
 {
     public partial class frmLanguage : Form
     {
+        Profesor _professor;
         public frmLanguage()
         {
             InitializeComponent();
+        }
+        public frmLanguage(Profesor profesor) : this()
+        {
+            _professor = profesor;
         }
     }
 }

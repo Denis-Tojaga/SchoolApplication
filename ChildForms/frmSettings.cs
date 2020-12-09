@@ -105,21 +105,21 @@ namespace SchoolApp.ChildForms
         {
             lblClickedButtonValue.Text = "General settings of your account";
             HideMeniButtons();
-            frmGeneral generalForma = new frmGeneral();
+            frmGeneral generalForma = new frmGeneral(_profesor);
             OpenChildForm(generalForma, sender);
         }
         private void btnPrivacy_Click(object sender, EventArgs e)
         {
             lblClickedButtonValue.Text = "Privacy settings of your account";
             HideMeniButtons();
-            frmPrivacy privacyForma = new frmPrivacy();
+            frmPrivacy privacyForma = new frmPrivacy(_profesor);
             OpenChildForm(privacyForma, sender);
         }
         private void btnLanguage_Click(object sender, EventArgs e)
         {
             lblClickedButtonValue.Text = "Language settings of your account";
             HideMeniButtons();
-            frmLanguage languageForma = new frmLanguage();
+            frmLanguage languageForma = new frmLanguage(_profesor);
             OpenChildForm(languageForma, sender);
         }
         private void btnLogout_Click(object sender, EventArgs e)
