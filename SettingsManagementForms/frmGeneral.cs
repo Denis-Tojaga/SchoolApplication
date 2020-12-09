@@ -30,12 +30,12 @@ namespace SchoolApp.SettingsManagementForms
             Close();
         }
 
-        private void frmGeneral_Load(object sender, EventArgs e)
-        {
-            LoadData();
-            LockControls();
-        }
 
+
+
+        /// <summary>
+        /// Loads data from the current professor
+        /// </summary>
         private void LoadData()
         {
             txtImePrezime.Text = _profesor.Ime + " " + _profesor.Prezime;
@@ -49,7 +49,17 @@ namespace SchoolApp.SettingsManagementForms
             else
                 txtVerified.Text = "Verify your identity so you can see the school ads and upcoming events.";
         }
+        private void frmGeneral_Load(object sender, EventArgs e)
+        {
+            LoadData();
+            LockControls();
+        }
 
+
+
+        /// <summary>
+        /// Locks all controls
+        /// </summary>
         private void LockControls()
         {
             txtEmail.Enabled = false;
