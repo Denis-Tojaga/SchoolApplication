@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace SchoolApp.SettingsManagementForms
     public partial class frmGeneral : Form
     {
         Profesor _profesor;
+        DatabaseConnection konekcijaNaBazu = new DatabaseConnection();
 
         public frmGeneral()
         {
@@ -49,6 +51,10 @@ namespace SchoolApp.SettingsManagementForms
             txtIdentity.Enabled = false;
         }
 
+
+
+
+
         private void lblEditMode1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (lblEditMode1.Text == "Edit")
@@ -62,32 +68,42 @@ namespace SchoolApp.SettingsManagementForms
                 lblEditMode1.Text = "Edit";
             }
         }
-
         private void lblEditMode2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (lblEditMode2.Text == "Edit")
             {
-                txtImePrezime.Enabled = true;
+                txtEmail.Enabled = true;
                 lblEditMode2.Text = "Finish";
             }
             else
             {
-                txtImePrezime.Enabled = false;
-                lblEditMode2.Text = "Edit";
+                if (Validator.ValidirajPolje(txtEmail, err, "This field is required!"))
+                {
+                    _profesor.Email = txtEmail.Text;
+                    konekcijaNaBazu.Entry(_profesor).State = EntityState.Modified;
+                    konekcijaNaBazu.SaveChanges();
+                    txtEmail.Enabled = false;
+                    lblEditMode2.Text = "Edit";
+                }
             }
         }
-
         private void lblEditMode3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (lblEditMode3.Text == "Edit")
             {
-                txtImePrezime.Enabled = true;
+                txtSafeWord.Enabled = true;
                 lblEditMode3.Text = "Finish";
             }
             else
             {
-                txtImePrezime.Enabled = false;
-                lblEditMode3.Text = "Edit";
+                if (Validator.ValidirajPolje(txtSafeWord, err, "This field is required!"))
+                {
+                    _profesor.SigurnosnaRijec = txtSafeWord.Text;
+                    konekcijaNaBazu.Entry(_profesor).State = EntityState.Modified;
+                    konekcijaNaBazu.SaveChanges();
+                    txtSafeWord.Enabled = false;
+                    lblEditMode3.Text = "Edit";
+                }
             }
         }
     }
