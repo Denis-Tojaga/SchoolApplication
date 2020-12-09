@@ -30,160 +30,188 @@
         {
             this.lblClickedButtonValue = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panelMeni = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnPrivacy = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnGeneral = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnGoBack = new System.Windows.Forms.Button();
+            this.pb4 = new System.Windows.Forms.PictureBox();
+            this.pb3 = new System.Windows.Forms.PictureBox();
+            this.pb2 = new System.Windows.Forms.PictureBox();
+            this.pb1 = new System.Windows.Forms.PictureBox();
+            this.panelMeni.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblClickedButtonValue
             // 
             this.lblClickedButtonValue.Font = new System.Drawing.Font("Comic Sans MS", 18.75F, System.Drawing.FontStyle.Bold);
             this.lblClickedButtonValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.lblClickedButtonValue.Location = new System.Drawing.Point(209, 31);
+            this.lblClickedButtonValue.Location = new System.Drawing.Point(52, 31);
             this.lblClickedButtonValue.Name = "lblClickedButtonValue";
-            this.lblClickedButtonValue.Size = new System.Drawing.Size(503, 43);
+            this.lblClickedButtonValue.Size = new System.Drawing.Size(671, 43);
             this.lblClickedButtonValue.TabIndex = 0;
             this.lblClickedButtonValue.Text = "Settings of your account";
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.label2.Location = new System.Drawing.Point(209, 74);
+            this.label2.Location = new System.Drawing.Point(55, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(735, 2);
+            this.label2.Size = new System.Drawing.Size(855, 2);
             this.label2.TabIndex = 1;
             // 
-            // panel1
+            // panelMeni
             // 
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.btnLogout);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.btnLanguage);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.btnPrivacy);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.btnGeneral);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(203, 519);
-            this.panel1.TabIndex = 2;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.Image = global::SchoolApp.Properties.Resources.logout1;
-            this.pictureBox4.Location = new System.Drawing.Point(15, 445);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(42, 48);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
+            this.panelMeni.Controls.Add(this.pb4);
+            this.panelMeni.Controls.Add(this.pb3);
+            this.panelMeni.Controls.Add(this.pb2);
+            this.panelMeni.Controls.Add(this.btnLogout);
+            this.panelMeni.Controls.Add(this.pb1);
+            this.panelMeni.Controls.Add(this.btnGeneral);
+            this.panelMeni.Controls.Add(this.btnPrivacy);
+            this.panelMeni.Controls.Add(this.btnLanguage);
+            this.panelMeni.Location = new System.Drawing.Point(58, 95);
+            this.panelMeni.Name = "panelMeni";
+            this.panelMeni.Size = new System.Drawing.Size(852, 362);
+            this.panelMeni.TabIndex = 2;
             // 
             // btnLogout
             // 
             this.btnLogout.BackColor = System.Drawing.Color.White;
             this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnLogout.FlatAppearance.BorderSize = 2;
             this.btnLogout.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.btnLogout.Location = new System.Drawing.Point(0, 430);
+            this.btnLogout.Location = new System.Drawing.Point(263, 239);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnLogout.Size = new System.Drawing.Size(203, 77);
+            this.btnLogout.Size = new System.Drawing.Size(334, 52);
             this.btnLogout.TabIndex = 6;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Image = global::SchoolApp.Properties.Resources.jezik5;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 339);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(51, 52);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
-            // 
             // btnLanguage
             // 
             this.btnLanguage.BackColor = System.Drawing.Color.White;
             this.btnLanguage.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnLanguage.FlatAppearance.BorderSize = 2;
             this.btnLanguage.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLanguage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.btnLanguage.Location = new System.Drawing.Point(0, 328);
+            this.btnLanguage.Location = new System.Drawing.Point(263, 183);
             this.btnLanguage.Name = "btnLanguage";
             this.btnLanguage.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnLanguage.Size = new System.Drawing.Size(203, 77);
+            this.btnLanguage.Size = new System.Drawing.Size(334, 50);
             this.btnLanguage.TabIndex = 4;
             this.btnLanguage.Text = "Language";
             this.btnLanguage.UseVisualStyleBackColor = false;
             this.btnLanguage.Click += new System.EventHandler(this.btnLanguage_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = global::SchoolApp.Properties.Resources.finger;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 240);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(51, 52);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
             // btnPrivacy
             // 
             this.btnPrivacy.BackColor = System.Drawing.Color.White;
             this.btnPrivacy.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnPrivacy.FlatAppearance.BorderSize = 2;
             this.btnPrivacy.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrivacy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.btnPrivacy.Location = new System.Drawing.Point(0, 229);
+            this.btnPrivacy.Location = new System.Drawing.Point(263, 128);
             this.btnPrivacy.Name = "btnPrivacy";
             this.btnPrivacy.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnPrivacy.Size = new System.Drawing.Size(203, 77);
+            this.btnPrivacy.Size = new System.Drawing.Size(334, 49);
             this.btnPrivacy.TabIndex = 2;
             this.btnPrivacy.Text = "Privacy";
             this.btnPrivacy.UseVisualStyleBackColor = false;
             this.btnPrivacy.Click += new System.EventHandler(this.btnPrivacy_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = global::SchoolApp.Properties.Resources.slika3;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 139);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(51, 48);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnGeneral
             // 
             this.btnGeneral.BackColor = System.Drawing.Color.White;
             this.btnGeneral.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnGeneral.FlatAppearance.BorderSize = 2;
             this.btnGeneral.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGeneral.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.btnGeneral.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnGeneral.Location = new System.Drawing.Point(0, 123);
+            this.btnGeneral.Location = new System.Drawing.Point(263, 70);
             this.btnGeneral.Name = "btnGeneral";
             this.btnGeneral.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnGeneral.Size = new System.Drawing.Size(203, 78);
+            this.btnGeneral.Size = new System.Drawing.Size(334, 52);
             this.btnGeneral.TabIndex = 0;
             this.btnGeneral.Text = "General";
             this.btnGeneral.UseVisualStyleBackColor = false;
             this.btnGeneral.Click += new System.EventHandler(this.btnGeneral_Click);
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.label1.Location = new System.Drawing.Point(55, 478);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(855, 2);
+            this.label1.TabIndex = 3;
+            // 
+            // btnGoBack
+            // 
+            this.btnGoBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.btnGoBack.FlatAppearance.BorderSize = 0;
+            this.btnGoBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGoBack.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
+            this.btnGoBack.ForeColor = System.Drawing.Color.White;
+            this.btnGoBack.Location = new System.Drawing.Point(804, 41);
+            this.btnGoBack.Name = "btnGoBack";
+            this.btnGoBack.Size = new System.Drawing.Size(106, 30);
+            this.btnGoBack.TabIndex = 4;
+            this.btnGoBack.Text = "< Go back";
+            this.btnGoBack.UseVisualStyleBackColor = false;
+            this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
+            // 
+            // pb4
+            // 
+            this.pb4.BackColor = System.Drawing.Color.White;
+            this.pb4.Image = global::SchoolApp.Properties.Resources.logout1;
+            this.pb4.Location = new System.Drawing.Point(353, 248);
+            this.pb4.Name = "pb4";
+            this.pb4.Size = new System.Drawing.Size(44, 36);
+            this.pb4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb4.TabIndex = 7;
+            this.pb4.TabStop = false;
+            // 
+            // pb3
+            // 
+            this.pb3.BackColor = System.Drawing.Color.White;
+            this.pb3.Image = global::SchoolApp.Properties.Resources.jezik5;
+            this.pb3.Location = new System.Drawing.Point(352, 191);
+            this.pb3.Name = "pb3";
+            this.pb3.Size = new System.Drawing.Size(45, 35);
+            this.pb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb3.TabIndex = 5;
+            this.pb3.TabStop = false;
+            // 
+            // pb2
+            // 
+            this.pb2.BackColor = System.Drawing.Color.White;
+            this.pb2.Image = global::SchoolApp.Properties.Resources.finger;
+            this.pb2.Location = new System.Drawing.Point(353, 135);
+            this.pb2.Name = "pb2";
+            this.pb2.Size = new System.Drawing.Size(45, 34);
+            this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb2.TabIndex = 3;
+            this.pb2.TabStop = false;
+            // 
+            // pb1
+            // 
+            this.pb1.BackColor = System.Drawing.Color.White;
+            this.pb1.Image = global::SchoolApp.Properties.Resources.slika3;
+            this.pb1.Location = new System.Drawing.Point(353, 76);
+            this.pb1.Name = "pb1";
+            this.pb1.Size = new System.Drawing.Size(45, 39);
+            this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb1.TabIndex = 1;
+            this.pb1.TabStop = false;
             // 
             // frmSettings
             // 
@@ -191,18 +219,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(961, 519);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnGoBack);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panelMeni);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblClickedButtonValue);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.frmSettings_Load);
+            this.panelMeni.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -211,14 +242,16 @@
 
         private System.Windows.Forms.Label lblClickedButtonValue;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelMeni;
         private System.Windows.Forms.Button btnGeneral;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pb1;
+        private System.Windows.Forms.PictureBox pb2;
         private System.Windows.Forms.Button btnPrivacy;
         private System.Windows.Forms.Button btnLanguage;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pb3;
+        private System.Windows.Forms.PictureBox pb4;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnGoBack;
     }
 }
