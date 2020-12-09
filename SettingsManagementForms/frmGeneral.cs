@@ -121,6 +121,7 @@ namespace SchoolApp.SettingsManagementForms
             if(verifikacija.ShowDialog() == DialogResult.OK)
             {
                 txtVerified.Text = "Email verified!";
+                linkLabel4.Enabled = false;
                 MessageBox.Show($"Email successfully verified!");
             }
         }
