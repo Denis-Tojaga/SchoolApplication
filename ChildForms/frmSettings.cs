@@ -27,6 +27,11 @@ namespace SchoolApp.ChildForms
         {
             _profesor = profesor;
         }
+
+        /// <summary>
+        /// Hides and show settings meni
+        /// </summary>
+
         private void HideMeniButtons()
         {
             btnGeneral.Hide();
@@ -39,24 +44,38 @@ namespace SchoolApp.ChildForms
             pb4.Hide();
             btnGoBack.Show();
         }
+        private void ShowMeni()
+        {
+            btnGeneral.Show();
+            btnLogout.Show();
+            btnLanguage.Show();
+            btnPrivacy.Show();
+            pb1.Show();
+            pb2.Show();
+            pb3.Show();
+            pb4.Show();
+            btnGoBack.Hide();
+        }
+        private void btnGoBack_Click(object sender, EventArgs e)
+        {
+            _activeForm.Close();
+            ShowMeni();
+        }
 
 
-        //private void AktivirajButton(object btnKliknuti)
-        //{
-        //    if (btnKliknuti != null)
-        //        if (_activeButton != (Button)btnKliknuti)
-        //        {
-        //            DisableButton();
-        //            _activeButton = (Button)btnKliknuti;
-        //        }
-        //}
 
 
+
+
+
+
+        /// <summary>
+        /// Opens up child forms for this meni
+        /// </summary>
         private void OpenChildForm(Form childForma, object btnKliknuti)
         {
             _activeForm?.Close();
             //AktivirajButton(btnKliknuti);
-            (btnKliknuti as Button).BackColor = Color.FromArgb(30, 115, 172);
             _activeForm = childForma;
             childForma.TopLevel = false;
             childForma.FormBorderStyle = FormBorderStyle.None;
@@ -66,8 +85,6 @@ namespace SchoolApp.ChildForms
             childForma.BringToFront();
             childForma.Show();
         }
-
-
 
 
 
@@ -107,23 +124,5 @@ namespace SchoolApp.ChildForms
             btnGoBack.Hide();
         }
 
-        private void btnGoBack_Click(object sender, EventArgs e)
-        {
-            _activeForm.Close();
-            ShowMeni();
-        }
-
-        private void ShowMeni()
-        {
-            btnGeneral.Show();
-            btnLogout.Show();
-            btnLanguage.Show();
-            btnPrivacy.Show();
-            pb1.Show();
-            pb2.Show();
-            pb3.Show();
-            pb4.Show();
-            btnGoBack.Hide();
-        }
     }
 }
