@@ -41,6 +41,13 @@ namespace SchoolApp.SettingsManagementForms
             txtImePrezime.Text = _profesor.Ime + " " + _profesor.Prezime;
             txtEmail.Text = _profesor.Email;
             txtSafeWord.Text = _profesor.SigurnosnaRijec;
+            if(_profesor.Verifikacija==1)
+            {
+                txtVerified.Text = "Email verified!";
+                linkLabel4.Enabled = false;
+            }
+            else
+                txtVerified.Text = "Verify your identity so you can see the school ads and upcoming events.";
         }
 
         private void LockControls()
@@ -48,7 +55,7 @@ namespace SchoolApp.SettingsManagementForms
             txtEmail.Enabled = false;
             txtImePrezime.Enabled = false;
             txtSafeWord.Enabled = false;
-            txtIdentity.Enabled = false;
+            txtVerified.Enabled = false;
         }
 
 
@@ -112,8 +119,10 @@ namespace SchoolApp.SettingsManagementForms
         {
             frmVerify verifikacija = new frmVerify(_profesor);
             if(verifikacija.ShowDialog() == DialogResult.OK)
+            {
+                txtVerified.Text = "Email verified!";
                 MessageBox.Show($"Email successfully verified!");
-
+            }
         }
     }
 }

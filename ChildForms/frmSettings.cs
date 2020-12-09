@@ -50,6 +50,7 @@ namespace SchoolApp.ChildForms
         }
         private void ShowMeni()
         {
+            lblClickedButtonValue.Text = "Settings of your account";
             btnGeneral.Show();
             btnLogout.Show();
             btnLanguage.Show();

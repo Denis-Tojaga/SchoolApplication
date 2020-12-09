@@ -43,7 +43,7 @@
             this.txtSafeWord = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtIdentity = new System.Windows.Forms.TextBox();
+            this.txtVerified = new System.Windows.Forms.TextBox();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.err = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.err)).BeginInit();
@@ -197,18 +197,18 @@
             this.label8.TabIndex = 12;
             this.label8.Text = "Identity confirmation";
             // 
-            // txtIdentity
+            // txtVerified
             // 
-            this.txtIdentity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.txtIdentity.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIdentity.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F);
-            this.txtIdentity.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtIdentity.Location = new System.Drawing.Point(365, 312);
-            this.txtIdentity.Multiline = true;
-            this.txtIdentity.Name = "txtIdentity";
-            this.txtIdentity.Size = new System.Drawing.Size(256, 30);
-            this.txtIdentity.TabIndex = 14;
-            this.txtIdentity.Text = "Verify your identity so you can see the school ads and upcoming events.";
+            this.txtVerified.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.txtVerified.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtVerified.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F);
+            this.txtVerified.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txtVerified.Location = new System.Drawing.Point(365, 312);
+            this.txtVerified.Multiline = true;
+            this.txtVerified.Name = "txtVerified";
+            this.txtVerified.Size = new System.Drawing.Size(256, 30);
+            this.txtVerified.TabIndex = 14;
+            this.txtVerified.Text = "Verify your identity so you can see the school ads and upcoming events.";
             // 
             // linkLabel4
             // 
@@ -235,7 +235,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.ClientSize = new System.Drawing.Size(800, 410);
             this.Controls.Add(this.linkLabel4);
-            this.Controls.Add(this.txtIdentity);
+            this.Controls.Add(this.txtVerified);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lblEditMode3);
@@ -276,7 +276,7 @@
         private System.Windows.Forms.TextBox txtSafeWord;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtIdentity;
+        private System.Windows.Forms.TextBox txtVerified;
         private System.Windows.Forms.LinkLabel linkLabel4;
         private System.Windows.Forms.ErrorProvider err;
     }

@@ -109,6 +109,7 @@ namespace SchoolApp
                     novi.Spol = ProvjeriOznaceniButton();
                     novi.RadnaPozicija = txtPozicija.Text;
                     novi.SigurnosnaRijec = txtSigurnosnaRijec.Text;
+                    novi.Verifikacija = 0;
 
 
                     konekcijaNaBazu.Profesori.Add(novi);

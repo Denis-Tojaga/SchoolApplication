@@ -24,6 +24,7 @@ namespace SchoolApp
         public string Ucionica { get; set; }
         public string RadnaPozicija { get; set; }
         public string SigurnosnaRijec { get; set; }
+        public int Verifikacija { get; set; }
 
         public string Spol { get; set; }
 

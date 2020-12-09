@@ -12,6 +12,7 @@ namespace SchoolApp.SettingsManagementForms
 {
     public partial class frmVerify : Form
     {
+        DatabaseConnection konekcijaNaBazu = new DatabaseConnection();
         Profesor _profesor;
         public frmVerify()
         {
@@ -26,6 +27,22 @@ namespace SchoolApp.SettingsManagementForms
         private void frmVerify_Load(object sender, EventArgs e)
         {
             lblVerify.Text += _profesor.Email;
+        }
+
+        private void cbVerify_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            if(cbVerify.Checked)
+            {
+                _profesor.Verifikacija = 1;
+                konekcijaNaBazu.Entry(_profesor).State = System.Data.Entity.EntityState.Modified;
+                konekcijaNaBazu.SaveChanges();
+                DialogResult = DialogResult.OK;
+            }
         }
     }
 }

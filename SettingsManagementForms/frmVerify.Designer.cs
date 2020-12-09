@@ -39,19 +39,20 @@
             this.cbVerify.AutoSize = true;
             this.cbVerify.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbVerify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.cbVerify.Location = new System.Drawing.Point(228, 98);
+            this.cbVerify.Location = new System.Drawing.Point(267, 98);
             this.cbVerify.Name = "cbVerify";
             this.cbVerify.Size = new System.Drawing.Size(73, 22);
             this.cbVerify.TabIndex = 0;
             this.cbVerify.Text = "Verify";
             this.cbVerify.UseVisualStyleBackColor = true;
+            this.cbVerify.CheckedChanged += new System.EventHandler(this.cbVerify_CheckedChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 22.25F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.label1.Location = new System.Drawing.Point(28, 31);
+            this.label1.Location = new System.Drawing.Point(67, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(273, 34);
             this.label1.TabIndex = 1;
@@ -62,7 +63,7 @@
             this.lblVerify.AutoSize = true;
             this.lblVerify.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.25F);
             this.lblVerify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(30)))));
-            this.lblVerify.Location = new System.Drawing.Point(31, 65);
+            this.lblVerify.Location = new System.Drawing.Point(70, 65);
             this.lblVerify.Name = "lblVerify";
             this.lblVerify.Size = new System.Drawing.Size(152, 16);
             this.lblVerify.TabIndex = 2;
@@ -75,18 +76,19 @@
             this.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirm.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirm.ForeColor = System.Drawing.Color.White;
-            this.btnConfirm.Location = new System.Drawing.Point(34, 125);
+            this.btnConfirm.Location = new System.Drawing.Point(73, 125);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(267, 27);
+            this.btnConfirm.Size = new System.Drawing.Size(267, 33);
             this.btnConfirm.TabIndex = 3;
             this.btnConfirm.Text = "Confirm verification";
             this.btnConfirm.UseVisualStyleBackColor = false;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // frmVerify
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(329, 164);
+            this.ClientSize = new System.Drawing.Size(413, 170);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.lblVerify);
             this.Controls.Add(this.label1);
