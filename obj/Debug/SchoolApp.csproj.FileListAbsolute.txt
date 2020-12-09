@@ -49,3 +49,4 @@ C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.CalendarMa
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.ChildForms.frmSettings.resources
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.SettingsManagementForms.frmGeneral.resources
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.SettingsManagementForms.frmPrivacy.resources
+C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.SettingsManagementForms.frmVerify.resources

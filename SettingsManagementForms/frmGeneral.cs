@@ -54,7 +54,9 @@ namespace SchoolApp.SettingsManagementForms
 
 
 
-
+        /// <summary>
+        /// Functionalities for every clicked link label
+        /// </summary>
         private void lblEditMode1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (lblEditMode1.Text == "Edit")
@@ -105,6 +107,13 @@ namespace SchoolApp.SettingsManagementForms
                     lblEditMode3.Text = "Edit";
                 }
             }
+        }
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmVerify verifikacija = new frmVerify(_profesor);
+            if(verifikacija.ShowDialog() == DialogResult.OK)
+                MessageBox.Show($"Email successfully verified!");
+
         }
     }
 }

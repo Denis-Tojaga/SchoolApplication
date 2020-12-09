@@ -221,6 +221,7 @@
             this.linkLabel4.TabIndex = 15;
             this.linkLabel4.TabStop = true;
             this.linkLabel4.Text = "Show";
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
             // err
             // 
@@ -232,7 +233,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.ClientSize = new System.Drawing.Size(800, 417);
+            this.ClientSize = new System.Drawing.Size(800, 410);
             this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.txtIdentity);
             this.Controls.Add(this.label7);
