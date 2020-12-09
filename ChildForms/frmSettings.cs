@@ -27,6 +27,10 @@ namespace SchoolApp.ChildForms
         {
             _profesor = profesor;
         }
+        private void frmSettings_Load(object sender, EventArgs e)
+        {
+            btnGoBack.Hide();
+        }
 
         /// <summary>
         /// Hides and show settings meni
@@ -89,6 +93,14 @@ namespace SchoolApp.ChildForms
 
 
 
+
+
+
+
+
+        /// <summary>
+        /// Opens the child form in the current panel and their functionality
+        /// </summary>
         private void btnGeneral_Click(object sender, EventArgs e)
         {
             lblClickedButtonValue.Text = "General settings of your account";
@@ -96,8 +108,6 @@ namespace SchoolApp.ChildForms
             frmGeneral generalForma = new frmGeneral();
             OpenChildForm(generalForma, sender);
         }
-
-
         private void btnPrivacy_Click(object sender, EventArgs e)
         {
             lblClickedButtonValue.Text = "Privacy settings of your account";
@@ -105,24 +115,18 @@ namespace SchoolApp.ChildForms
             frmPrivacy privacyForma = new frmPrivacy();
             OpenChildForm(privacyForma, sender);
         }
-
         private void btnLanguage_Click(object sender, EventArgs e)
         {
             lblClickedButtonValue.Text = "Language settings of your account";
             HideMeniButtons();
+            frmLanguage languageForma = new frmLanguage();
+            OpenChildForm(languageForma, sender);
         }
-
         private void btnLogout_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Do you want to continue with this action?", "Confirmation", MessageBoxButtons.YesNoCancel);
             if (result == DialogResult.Yes)
                 Close();
         }
-
-        private void frmSettings_Load(object sender, EventArgs e)
-        {
-            btnGoBack.Hide();
-        }
-
     }
 }
