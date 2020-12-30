@@ -16,7 +16,6 @@ C:\Users\Denis\source\repos\SchoolApp\obj\Debug\SchoolApp.csproj.CoreCompileInpu
 C:\Users\Denis\source\repos\SchoolApp\obj\Debug\SchoolApp.csproj.CopyComplete
 C:\Users\Denis\source\repos\SchoolApp\obj\Debug\SchoolApp.exe
 C:\Users\Denis\source\repos\SchoolApp\obj\Debug\SchoolApp.pdb
-C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.csprojAssemblyReference.cache
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.Properties.Resources.resources
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.csproj.GenerateResource.cache
 C:\Users\Denis\Documents\GitHub\SchoolApplication\obj\Debug\SchoolApp.csproj.CoreCompileInputs.cache
