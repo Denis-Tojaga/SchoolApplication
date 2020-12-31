@@ -15,7 +15,6 @@ namespace SchoolApp.ChildForms
     {
         Profesor _profesor;
         Form _activeForm;
-        Button _activeButton;
 
         public frmSettings()
         {
