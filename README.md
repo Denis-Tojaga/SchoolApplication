@@ -5,7 +5,7 @@ School Management System - Demo Version
 
 ### Login and Registration
 Main functionality where user can login with their credentials.If you are not registered,you do that with Registration form.
-<br>
+</br></br>
 ![](AppImages/slika1.png)
 
 Main form consists of several child ones in which you can go from one to another.HOME,SETTINGS,SUBJECTS,CALENDAR,STUDENTS lets you to replicate behaving of a professor.
