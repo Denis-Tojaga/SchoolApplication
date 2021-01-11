@@ -25,7 +25,7 @@ This form lets user to edit his details and save them for next time in SQLite da
 Form lets user to have a view of all students logged on management system and also can see their details, professor also can add new student through new form,
 professor can search students with Index code, First Name of Year of study ( depends on his needs) 
 </br></br>
-![](AppImages/slika4.png)
+![](AppImages/slika5.png)
 </br></br>
 
 
