@@ -33,10 +33,25 @@ professor can search students with Index code, First Name of Year of study ( dep
 Form lets user to have a view of all subjects in school and their details, you can also search for subjects with year of study and decide how much fields you want
 to show in the result
 Adding an exam is also implemented where you can add new subject and its actions through out new form
+</br></br>
+![](AppImages/slika6.png)
+</br></br>
+
 ### CALENDAR 
 Only lets you to see the implemented calendar and send mail to specific student from base in a new form (you can add attachment in mail)
+</br></br>
+![](AppImages/slika7.png)
+</br></br>
+</br></br>
+![](AppImages/slika8.png)
+</br></br>
+
 ### SETTINGS 
 Form has several moods where you can set some general setttings (ex. Safe word,Email verification,Email),language settings where user can decide which language wants
 and logout setting where you go back to the starting form
 User can go back and forward between these mods
+</br></br>
+![](AppImages/slika9.png)
+</br></br>
+
 </br></br>
