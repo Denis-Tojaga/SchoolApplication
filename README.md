@@ -5,6 +5,9 @@ School Management System - Demo Version
 
 ### Login and Registration
 Main functionality where user can login with their credentials.If you are not registered,you do that with Registration form.
+
+#### Login info ::: Username -> denis ::: Password -> 123123
+
 </br></br>
 ![](AppImages/slika1.png)
 </br></br>
